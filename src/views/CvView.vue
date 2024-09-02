@@ -405,6 +405,18 @@
             <img src="../assets/img/imgs/gallery-14.png" alt />
           </div>
         </a>
+        <a href="/research-gate-page/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Research Gate</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-15.png" alt />
+          </div>
+        </a>
         <a href="/Lava/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>soon</h2>
