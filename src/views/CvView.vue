@@ -333,6 +333,30 @@
             <img src="../assets/img/imgs/gallery-08.png" alt />
           </div>
         </a>
+        <a href="/Construction-Company/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Construction-Company</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-09.png" alt />
+          </div>
+        </a>
+        <a href="/electricity-power/html/land.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>electricity-power</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-10.png" alt />
+          </div>
+        </a>
         <a href="/Lava/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>soon</h2>
