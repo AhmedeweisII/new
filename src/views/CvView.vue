@@ -466,6 +466,18 @@
             <img src="../assets/img/imgs/gallery-19.png" alt />
           </div>
         </a>
+        <a href="/Masafat/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Masafat</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-20.png" alt />
+          </div>
+        </a>
         <a href="/Lava/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>soon</h2>
