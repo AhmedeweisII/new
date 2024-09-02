@@ -417,6 +417,7 @@
             <img src="../assets/img/imgs/gallery-15.png" alt />
           </div>
         </a>
+        
         <a href="/Leon/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Leon</h2>
@@ -427,6 +428,18 @@
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-16.png" alt />
+          </div>
+        </a>
+        <a href="/E-Commerce/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>E-Commerce</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-17.png" alt />
           </div>
         </a>
         <a href="/Lava/index.html" class="box" target="_blank">
