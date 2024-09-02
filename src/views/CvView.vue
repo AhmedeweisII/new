@@ -490,7 +490,30 @@
             <img src="../assets/img/imgs/gallery-21.png" alt />
           </div>
         </a>
-        
+        <a href="/Kasper/temp2.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Kasper</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-22.png" alt />
+          </div>
+        </a>
+        <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
+          <div class="infoo">
+            <h2>mashrouk</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-23.png" alt />
+          </div>
+        </a>
         <a href="/Lava/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>soon</h2>
