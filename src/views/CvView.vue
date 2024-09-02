@@ -357,6 +357,18 @@
             <img src="../assets/img/imgs/gallery-10.png" alt />
           </div>
         </a>
+        <a href="/FlyFly/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>FlyFly</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-11.png" alt />
+          </div>
+        </a>
         <a href="/Lava/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>soon</h2>
