@@ -191,13 +191,13 @@
       <div class="container">
         <div class="fact">
           <img src="../assets/img/list.png" class="icon2-m" />
-          <h2 class="number">27</h2>
+          <h2 class="number">24</h2>
           <h3>Projects completed</h3>
         </div>
         <div class="fact">
           <img src="../assets/img/reputation.png" class="icon2-m" />
           <h2 class="number">10</h2>
-          <h3>satisfied clients</h3>
+          <h3>Satisfied clients</h3>
         </div>
         <div class="fact">
           <img src="../assets/img/responsive.png" class="icon2-m" />
@@ -289,7 +289,7 @@
             <h2></h2>
           </div>
           <div class="image flexe">
-            <h1>+22 More</h1>
+            <h1>+19 More</h1>
             <button>View</button>
           </div>
         </span>
@@ -524,18 +524,6 @@
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-24.png" alt />
-          </div>
-        </a>
-        <a href="/Lava/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>soon</h2>
-            <h2>
-              soon
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <h1>+19 coming soon</h1>
           </div>
         </a>
       </div>
