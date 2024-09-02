@@ -306,7 +306,7 @@
             </h2>
           </div>
           <div class="image">
-            <img src="../assets/img/imgs/gallery-05.png" alt />
+            <img src="../assets/img/imgs/gallery-06.png" alt />
           </div>
         </a>
         <a href="/Lava/index.html" class="box" target="_blank">
@@ -319,6 +319,18 @@
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-07.png" alt />
+          </div>
+        </a>
+        <a href="/AI/main_Series_page/main.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Movie</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-08.png" alt />
           </div>
         </a>
         <a href="/Lava/index.html" class="box" target="_blank">
