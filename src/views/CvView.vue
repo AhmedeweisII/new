@@ -323,7 +323,7 @@
         </a>
         <a href="/AI/main_Series_page/main.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>Movie</h2>
+            <h2>Movies</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -335,7 +335,7 @@
         </a>
         <a href="/Construction-Company/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>Construction-Company</h2>
+            <h2>Construction Company</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -347,7 +347,7 @@
         </a>
         <a href="/electricity-power/html/land.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>electricity-power</h2>
+            <h2>Electricity Power</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -359,7 +359,7 @@
         </a>
         <a href="/FlyFly/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>FlyFly</h2>
+            <h2>Fly Fly</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -371,7 +371,7 @@
         </a>
         <a href="/Author_Identifcation/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>Author_Identifcation</h2>
+            <h2>Author Identifcation</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -383,7 +383,7 @@
         </a>
         <a href="/land-matcher/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>land-matcher</h2>
+            <h2>Land Matcher</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -395,7 +395,7 @@
         </a>
         <a href="/Light-Online/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>Light-Online</h2>
+            <h2>Light Online</h2>
             <h2>
               8
               <img src="../assets/img/star.png" class="icon2" />
@@ -415,6 +415,18 @@
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-15.png" alt />
+          </div>
+        </a>
+        <a href="/Leon/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Leon</h2>
+            <h2>
+              8
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-16.png" alt />
           </div>
         </a>
         <a href="/Lava/index.html" class="box" target="_blank">
