@@ -227,7 +227,7 @@
           <div class="infoo">
             <h2>Fashoin</h2>
             <h2>
-              8
+              7
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
@@ -235,11 +235,23 @@
             <img src="../assets/img/imgs/gallery-01.png" alt />
           </div>
         </a>
+        <a href="furniture/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Tumpas</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-04.png" alt />
+          </div>
+        </a>
         <a href="aqart/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Aqar Bot</h2>
             <h2>
-              7
+              9
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
@@ -251,38 +263,27 @@
           <div class="infoo">
             <h2>Scale</h2>
             <h2>
-              6
+              9
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-03.png" alt />
           </div>
-        </a>
-        <a href="furniture/index.html" class="box" target="_blank">
+        </a> 
+        <a href="/Author_Identifcation/index.html" class="box" target="_blank">
           <div class="infoo">
-            <h2>Tumpas</h2>
+            <h2>Author Identifcation</h2>
             <h2>
-              8
+              9
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
           <div class="image">
-            <img src="../assets/img/imgs/gallery-04.png" alt />
+            <img src="../assets/img/imgs/gallery-12.png" alt />
           </div>
         </a>
-        <a href="Corpo-link/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Corpo Link</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-05.png" alt />
-          </div>
-        </a>
+       
         <span class="box curser" @click="showo">
           <div class="infoo">
             <h2></h2>
@@ -297,216 +298,11 @@
     </div>
     <div class="gallery" v-if="shows === '1'">
       <div class="container">
-        <a href="/Mallory/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Mallory</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-06.png" alt />
-          </div>
-        </a>
-        <a href="/Lava/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Lava</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-07.png" alt />
-          </div>
-        </a>
-        <a href="/AI/main_Series_page/main.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Movies</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-08.png" alt />
-          </div>
-        </a>
-        <a href="/Construction-Company/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Construction Company</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-09.png" alt />
-          </div>
-        </a>
-        <a href="/electricity-power/html/land.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Electricity Power</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-10.png" alt />
-          </div>
-        </a>
-        <a href="/FlyFly/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Fly Fly</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-11.png" alt />
-          </div>
-        </a>
-        <a href="/Author_Identifcation/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Author Identifcation</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-12.png" alt />
-          </div>
-        </a>
-        <a href="/land-matcher/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Land Matcher</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-13.png" alt />
-          </div>
-        </a>
-        <a href="/Light-Online/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Light Online</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-14.png" alt />
-          </div>
-        </a>
-        <a href="/research-gate-page/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Research Gate</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-15.png" alt />
-          </div>
-        </a>
-        
-        <a href="/Leon/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Leon</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-16.png" alt />
-          </div>
-        </a>
-        <a href="/E-Commerce/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>E-Commerce</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-17.png" alt />
-          </div>
-        </a>
-        <a href="/luch/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Luch</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-18.png" alt />
-          </div>
-        </a>
-        <a href="/Logo-generator/authentication.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Logo generator</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-19.png" alt />
-          </div>
-        </a>
-        <a href="/Masafat/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Masafat</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-20.png" alt />
-          </div>
-        </a>
-        <a href="/My-Website/my_web_site.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>My-Website</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-21.png" alt />
-          </div>
-        </a>
-        <a href="/Kasper/temp2.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Kasper</h2>
-            <h2>
-              8
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-22.png" alt />
-          </div>
-        </a>
-        <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
+          <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
           <div class="infoo">
             <h2>mashrouk</h2>
             <h2>
-              8
+              5
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
@@ -518,12 +314,217 @@
           <div class="infoo">
             <h2>Tatweer</h2>
             <h2>
-              8
+              5
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
           <div class="image">
             <img src="../assets/img/imgs/gallery-24.png" alt />
+          </div>
+        </a>
+        <a href="/Kasper/temp2.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Kasper</h2>
+            <h2>
+              5
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-22.png" alt />
+          </div>
+        </a>
+        <a href="/Leon/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Leon</h2>
+            <h2>
+              9
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-16.png" alt />
+          </div>
+        </a>
+        <a href="/electricity-power/html/land.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Electricity Power</h2>
+            <h2>
+              9
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-10.png" alt />
+          </div>
+        </a>
+        <a href="/Lava/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Lava</h2>
+            <h2>
+              9
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-07.png" alt />
+          </div>
+        </a>
+        <a href="/My-Website/my_web_site.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>My-Website</h2>
+            <h2>
+              5
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-21.png" alt />
+          </div>
+        </a>
+         <a href="/Light-Online/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Light Online</h2>
+            <h2>
+              5
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-14.png" alt />
+          </div>
+        </a>
+         <a href="Corpo-link/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Corpo Link</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-05.png" alt />
+          </div>
+        </a>
+        <a href="/Mallory/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Mallory</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-06.png" alt />
+          </div>
+        </a>
+        <a href="/AI/main_Series_page/main.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Movies</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-08.png" alt />
+          </div>
+        </a>
+        <a href="/Construction-Company/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Construction Company</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-09.png" alt />
+          </div>
+        </a>
+        <a href="/FlyFly/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Fly Fly</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-11.png" alt />
+          </div>
+        </a>
+        
+        <a href="/land-matcher/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Land Matcher</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-13.png" alt />
+          </div>
+        </a>
+        <a href="/research-gate-page/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Research Gate</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-15.png" alt />
+          </div>
+        </a>
+        <a href="/E-Commerce/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>E-Commerce</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-17.png" alt />
+          </div>
+        </a>
+        <a href="/luch/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Luch</h2>
+            <h2>
+              5
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-18.png" alt />
+          </div>
+        </a>
+        <a href="/Logo-generator/authentication.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Logo generator</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-19.png" alt />
+          </div>
+        </a>
+        <a href="/Masafat/index.html" class="box" target="_blank">
+          <div class="infoo">
+            <h2>Masafat</h2>
+            <h2>
+              7
+              <img src="../assets/img/star.png" class="icon2" />
+            </h2>
+          </div>
+          <div class="image">
+            <img src="../assets/img/imgs/gallery-20.png" alt />
           </div>
         </a>
       </div>
