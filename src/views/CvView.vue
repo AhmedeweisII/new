@@ -6,13 +6,13 @@
         <nav class="navbar">
           <div class="icon2sy">
             <a href class="brand-link">
-              <div class="logo">
+              <!-- <div class="logo">
                 <div class="circle1"></div>
                 <div class="circle2"></div>
-              </div>
-              <span class="char" style="background-color:red;">B</span>
+              </div> -->
+              <span class="char" style="background-color:red;">A</span>
               <!-- <span class="sec-name">B</span> -->
-              linder
+              Ahmed_<span style="color:red;">Eweis</span>
             </a>
           </div>
           <ul class="nav-list" id="navi-list">
@@ -31,6 +31,9 @@
             <li class="list-item">
               <a href="#skills" class="ref">Skills</a>
             </li>
+             <li class="list-item">
+              <a href="#skills" class="ref">More</a>
+            </li>
           </ul>
           <div class="menu" id="toggle-button" @click="toggleMenu">
             <div class="menu-line"></div>
@@ -41,8 +44,9 @@
       </div>
     </header>
     <!-- 1 header -->
+
     <!-- 0 top2-->
-    <section class="land-top" id="home">
+    <!-- <section class="land-top" id="home">
       <div
         class="container"
         style="display: flex;
@@ -60,7 +64,7 @@
             <h2>top of The Last Projects</h2>
             <p>the most desired Projects</p>
           </div>
-          <!-- #1st -->
+       
           <a href="/fash/index.html" class="project" target="_blank">
             <img src="../assets/img/imgs/gallery-01.png" alt="none" class="p-cover" />
             <div class="info">
@@ -68,7 +72,7 @@
             </div>
             <p>good design for fashoin ideas</p>
           </a>
-          <!-- #2sd -->
+      
           <a href="aqart/index.html" class="project" target="_blank">
             <img src="../assets/img/imgs/gallery-02.png" alt="none" class="p-cover" />
             <div class="info">
@@ -76,7 +80,7 @@
             </div>
             <p>Landing page describe Bot</p>
           </a>
-          <!-- #3rd -->
+         
           <a href="/Scale/asset.html" class="project" target="_blank">
             <img src="../assets/img/pro1.png" alt="none" class="p-cover" />
             <div class="info">
@@ -84,7 +88,7 @@
             </div>
             <p>Exam for students</p>
           </a>
-          <!-- #4th -->
+        
           <a href="#Projects" class="more">
             <div class="sub-more">
               <p class="p-link">More Projects</p>
@@ -93,10 +97,32 @@
           </a>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- 1 top2 -->
     <!--  <div class=""></div> -->
     <!-- 1 jops  -->
+  <section class="make">
+  <div class="container">
+    <div class="left">
+      <h1>Front-End Developer</h1>
+      <p>Hardworking professional skilled in Vue.js. Passionate about secure,
+          optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful projects.</p>
+          <span>with 4+ years of experience</span>
+      <a class="cotact-me" href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp">Download CV</a>
+    </div>
+    <div class="right">
+      <div class="photo-container">
+        <img src="../assets/img/3.jpg" alt="Your Photo" class="profile-photo">
+        <div class="orbit">
+          <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank"><img src="../assets/img/icon1.png" alt="Social Icon 1"></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedeweiso@gmail.com" class="social-icon" target="_blank"><img src="../assets/img/icon2.png" alt="Social Icon 2"></a>
+          <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank"><img src="../assets/img/icon3.png" alt="Social Icon 3"></a>
+          <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank"><img src="../assets/img/icon4.png" alt="Social Icon 4"></a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <section class="jops" id="Services">
       <div class="container">
         <div class="services-tilte">
@@ -180,7 +206,7 @@
         </div>
         <div class="photo-box">
           <div class="photoo">
-            <img src="../assets/img/3.jpg" />
+            <img src="../assets/img/your-photoo.jpg" />
           </div>
         </div>
       </div>
@@ -270,7 +296,7 @@
           <div class="image">
             <img src="../assets/img/imgs/gallery-03.png" alt />
           </div>
-        </a> 
+        </a>
         <a href="/Author_Identifcation/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Author Identifcation</h2>
@@ -283,7 +309,7 @@
             <img src="../assets/img/imgs/gallery-12.png" alt />
           </div>
         </a>
-       
+
         <span class="box curser" @click="showo">
           <div class="infoo">
             <h2></h2>
@@ -298,7 +324,7 @@
     </div>
     <div class="gallery" v-if="shows === '1'">
       <div class="container">
-          <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
+        <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
           <div class="infoo">
             <h2>mashrouk</h2>
             <h2>
@@ -382,7 +408,7 @@
             <img src="../assets/img/imgs/gallery-21.png" alt />
           </div>
         </a>
-         <a href="/Light-Online/index.html" class="box" target="_blank">
+        <a href="/Light-Online/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Light Online</h2>
             <h2>
@@ -394,7 +420,7 @@
             <img src="../assets/img/imgs/gallery-14.png" alt />
           </div>
         </a>
-         <a href="Corpo-link/index.html" class="box" target="_blank">
+        <a href="Corpo-link/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Corpo Link</h2>
             <h2>
@@ -434,7 +460,7 @@
           <div class="infoo">
             <h2>Construction Company</h2>
             <h2>
-              7
+              9
               <img src="../assets/img/star.png" class="icon2" />
             </h2>
           </div>
@@ -454,7 +480,7 @@
             <img src="../assets/img/imgs/gallery-11.png" alt />
           </div>
         </a>
-        
+
         <a href="/land-matcher/index.html" class="box" target="_blank">
           <div class="infoo">
             <h2>Land Matcher</h2>
@@ -547,6 +573,14 @@
               <span>E-Mail</span>
               <input type="email" class="look-field" />
             </div>
+              <div class="look-content">
+                <span>Budget</span>
+                <input type="text" class="look-field" />
+              </div>
+              <div class="look-content">
+                <span>Subject</span>
+                <input type="text" class="look-field" />
+              </div>
             <textarea class="styled-textarea" placeholder="Enter your text here..."></textarea>
           </div>
           <button class="sen-btn">Send</button>
@@ -655,9 +689,9 @@
                   <div class="circle1"></div>
                   <div class="circle2"></div>
                 </div>
-                <span class="char" style="background-color:red;">B</span>
+                <span class="char" style="background-color:red;">E</span>
                 <!-- <span class="sec-name">B</span> -->
-                linder
+                eweis
               </a>
             </div>
             <div class="services-tilte">
@@ -728,7 +762,7 @@
           </div>
           <div class="one-col servo">
             <h2>Servcieses</h2>
-            <div class="">
+            <div class>
               <p>Web Development</p>
               <p>App Development</p>
               <p>Coud Engineering</p>
@@ -742,26 +776,28 @@
             <div class="contacty">
               <div class="contact-row">
                 <img src="../assets/img/call.png" class="icon2" />
-                <div><p>+20 1153161437</p>
-                <p>+20 1093057107</p></div>
-                
+                <div>
+                  <p>+20 1153161437</p>
+                  <p>+20 1093057107</p>
+                </div>
               </div>
             </div>
             <div class="contacty">
               <div class="contact-row">
                 <img src="../assets/img/gmail.png" class="icon2" />
-                <div><p>Ahmedeweiso@gmail.com</p>
-                <p>elkaseh95@gmail.com</p></div>
-                
+                <div>
+                  <p>Ahmedeweiso@gmail.com</p>
+                  <p>elkaseh95@gmail.com</p>
+                </div>
               </div>
             </div>
             <div class="contacty">
               <div class="contact-row">
                 <img src="../assets/img/placeholder.png" class="icon2" />
-                <div><p>168/170 , Avenue 01 , mirpur</p>
-                <p>DOHS , Bangladesh</p></div>
-
-                
+                <div>
+                  <p>168/170 , Avenue 01 , mirpur</p>
+                  <p>Cairo ,Egypt</p>
+                </div>
               </div>
             </div>
           </div>
@@ -785,11 +821,11 @@
             </div>
           </div>
         </div>
-          <div class="down-footer">
-            <div class="fr-d">B.design</div>
-            <div>© 2024 All Rights Reserved Blinder | Design by Ahmed Eweis</div>
-            <div>Privacy Policy . Terms and Conditions</div>
-          </div>
+        <div class="down-footer">
+          <div class="fr-d">A.design</div>
+          <div>© 2024 All Rights Reserved | Design by Ahmed Eweis</div>
+          <div>Privacy Policy . Terms and Conditions</div>
+        </div>
       </div>
     </footer>
     <!-- 1 -->

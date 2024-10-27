@@ -79,8 +79,29 @@ button {
   display:flex;
   justify-content:space-between; 
   background-color:transparent;
+  background:Url("../images/land-photo.jpeg");
+  background-size: cover;
+  background-attachment:fixed;
+  margin-top: -15px;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
+@media (max-width: 768px) {
+  .respons-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .navigation a {
   width:1.1;
   color:#eee;
@@ -111,7 +132,10 @@ button {
 }
 
 li {
-  display:inline-block; 
+  display:inline-block;
+}
+li a {
+  font-size: 22px !important;
 }
 
 .site-name {
@@ -192,7 +216,11 @@ li {
   align-items:center ;
   justify-content:center;
 }
-
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+  }
+}
 .services .serv {
   display:flex ;
   flex-direction:column;
@@ -233,7 +261,11 @@ li {
   flex-direction:row;
   align-items:center;
 }
-
+@media (max-width: 768px) {
+  .Superhores {
+    flex-direction: column;
+  }
+}
 .Superhores .imgg {
   max-width:100%;
   overflow:hidden;
@@ -246,7 +278,13 @@ li {
   align-items:flex-end;
   padding-right:205px;
 }
-
+@media (max-width: 768px) {
+  .Superhores .container .info {
+    justify-content: center;
+    padding-right:0px;
+    padding-top: 20px;
+  }
+}
 .Superhores .info h3 {
   font-size:23px;
   color:#333;
@@ -327,7 +365,6 @@ li {
 /* 0 qoute  */
 .qoute {
   max-width:100%;
-  height:200px;
   background-image:url("../images/quote.jpg");
   background-size:cover;
   background-position:bottom;
@@ -359,24 +396,36 @@ li {
 }
 
 .qoute .container  .inputs {
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-  gap:25px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
+.first-row ,
+.second-row {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2px;
+ }
 input {
   background-color:#fff;
   border:none;
-  width:200px;
+  width:auto;
   height:30px;
   border-radius:7px;
   padding:5px;
+  margin-top: 10px;
 }
 
 input[type="submit"] {
   background-color:blue;
   color:white;
   text-align:center;
+  width: -webkit-fill-available;
 }
 /* 1 qoute  */
 
@@ -392,11 +441,14 @@ input[type="submit"] {
   text-align:center;
 }
 .reviews .container {
-  width:80%;
   display:flex;
   justify-content:flex-end;
-  align-items:space-between;
   padding-top:50px;
+}
+@media (max-width: 768px) {
+  .reviews .container{
+    flex-direction: column;
+  }
 }
 .reviews .box {
   padding: 20px;
