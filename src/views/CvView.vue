@@ -9,10 +9,11 @@
               <!-- <div class="logo">
                 <div class="circle1"></div>
                 <div class="circle2"></div>
-              </div> -->
+              </div>-->
               <span class="char" style="background-color:red;">A</span>
               <!-- <span class="sec-name">B</span> -->
-              Ahmed_<span style="color:red;">Eweis</span>
+              Ahmed_
+              <span style="color:red;">Eweis</span>
             </a>
           </div>
           <ul class="nav-list" id="navi-list">
@@ -31,7 +32,7 @@
             <li class="list-item">
               <a href="#skills" class="ref">Skills</a>
             </li>
-             <li class="list-item">
+            <li class="list-item">
               <a href="#skills" class="ref">More</a>
             </li>
           </ul>
@@ -97,32 +98,159 @@
           </a>
         </div>
       </div>
-    </section> -->
+    </section>-->
     <!-- 1 top2 -->
     <!--  <div class=""></div> -->
     <!-- 1 jops  -->
-  <section class="make">
-  <div class="container">
-    <div class="left">
-      <h1>Front-End Developer</h1>
-      <p>Hardworking professional skilled in Vue.js. Passionate about secure,
-          optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful projects.</p>
+    <section class="make">
+      <div class="container">
+        <div class="left">
+          <h1>Front-End Developer</h1>
+          <p>
+            Hardworking professional skilled in Vue.js. Passionate about secure,
+            optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful projects.
+          </p>
           <span>with 4+ years of experience</span>
-      <a class="cotact-me" href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp">Download CV</a>
-    </div>
-    <div class="right">
-      <div class="photo-container">
-        <img src="../assets/img/3.jpg" alt="Your Photo" class="profile-photo">
-        <div class="orbit">
-          <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank"><img src="../assets/img/icon1.png" alt="Social Icon 1"></a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedeweiso@gmail.com" class="social-icon" target="_blank"><img src="../assets/img/icon2.png" alt="Social Icon 2"></a>
-          <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank"><img src="../assets/img/icon3.png" alt="Social Icon 3"></a>
-          <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank"><img src="../assets/img/icon4.png" alt="Social Icon 4"></a> 
+          <a
+            class="cotact-me"
+            href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp"
+          >Download CV</a>
+        </div>
+        <div class="right">
+          <div class="photo-container">
+            <img src="../assets/img/3.jpg" alt="Your Photo" class="profile-photo" />
+            <div class="orbit">
+              <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank">
+                <img src="../assets/img/icon1.png" alt="Social Icon 1" />
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedeweiso@gmail.com"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="../assets/img/icon2.png" alt="Social Icon 2" />
+              </a>
+              <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank">
+                <img src="../assets/img/icon3.png" alt="Social Icon 3" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmed-eweis/"
+                class="social-icon"
+                target="_blank"
+              >
+                <img src="../assets/img/icon4.png" alt="Social Icon 4" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <section class="pricing">
+      <div class="container">
+        <p class="upper">Pricing plan</p>
+        <h2>Pricing options that meets your</h2>
+        <h2>budget and needs</h2>
+        <div class="plans">
+          <div class="plan">
+            <div>
+              <p>Week based</p>
+              <h2>
+                3000 EG
+                <span class="price-per">per Week</span>
+              </h2>
+              <p>For Companies or Customer who need small or trying tasks</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>tekreer at the end of week</p>
+              </div>
+              <div class="plan-det">
+                <p>35 hours working in week</p>
+              </div>
+              <div class="plan-det">
+                <p>3 ~ 5 free Edits</p>
+              </div>
+              <div class="plan-det">
+                <p>Fast cuntinue Qustions sience work</p>
+              </div>
+              <div class="plan-det">
+                <p>free work day to try work</p>
+              </div>
+              <div class="plan-det">
+                <p>25% Payment Before work</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+          <div class="plan populer">
+            <div>
+              <p>Project based</p>
+              <h2>
+                5k ~ 10k EG
+                <span class="price-per">per Project</span>
+              </h2>
+              <p>For Companies or Customer who have spacific project requirment</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>Standerd price decided on project size</p>
+              </div>
+              <div class="plan-det">
+                <p>30% free Edites</p>
+              </div>
+              <div class="plan-det">
+                <p>2 weeks support after finish</p>
+              </div>
+              <div class="plan-det">
+                <p>Takreer of project setuation every 2 & 3 days</p>
+              </div>
+              <div class="plan-det">
+                <p>show project on layers (design & develop & publish)</p>
+              </div>
+              <div class="plan-det">
+                <p>33% Payment Before work</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+          <div class="plan">
+            <div>
+              <p>Full Time Jop</p>
+              <h2>
+                13,000 EG
+                <span class="price-per">per Month</span>
+              </h2>
+              <p>Companies or customer that need full time Developer per month</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>160 hours (8 hours/day .. 5 day/week)</p>
+              </div>
+              <!-- <div class="plan-det">
+							<p>Task management(Design & Develop & Improvement)</p>
+              </div>-->
+              <div class="plan-det">
+                <p>Weekly meeting To See Progress</p>
+              </div>
+              <div class="plan-det">
+                <p>Unlaimted free Edits</p>
+              </div>
+              <div class="plan-det">
+                <p>10% ~ 20% Discound if wook more than month</p>
+              </div>
+              <div class="plan-det">
+                <p>Working on more than project</p>
+              </div>
+              <div class="plan-det">
+                <p>50% Payment Before work</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1  -->
     <section class="jops" id="Services">
       <div class="container">
         <div class="services-tilte">
@@ -573,14 +701,14 @@
               <span>E-Mail</span>
               <input type="email" class="look-field" />
             </div>
-              <div class="look-content">
-                <span>Budget</span>
-                <input type="text" class="look-field" />
-              </div>
-              <div class="look-content">
-                <span>Subject</span>
-                <input type="text" class="look-field" />
-              </div>
+            <div class="look-content">
+              <span>Budget</span>
+              <input type="text" class="look-field" />
+            </div>
+            <div class="look-content">
+              <span>Subject</span>
+              <input type="text" class="look-field" />
+            </div>
             <textarea class="styled-textarea" placeholder="Enter your text here..."></textarea>
           </div>
           <button class="sen-btn">Send</button>
