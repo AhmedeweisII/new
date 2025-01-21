@@ -145,186 +145,7 @@
         </div>
       </div>
     </section>
-    <section class="timeline">
 
-    <div class="timeline-item">
-          <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
-          
-    <div class="timeline-content">
-      <h1>educations</h1>
-    </div>
-  </div>
-      <div class="timeline-item">
-        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
-    <div class="timeline-content">
-  <h1>work experince</h1>
-    </div>
-  </div>
-
-  <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
-    <div class="timeline-content">
-      <h3>Front-End Developer</h3>
-      <span>XYZ Company</span>
-      <span class="timeline-date">Jan 2022 - Present</span>
-      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
-    </div>
-  </div>
-
-    <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
-    <div class="timeline-content">
-      <h3>Front-End Developer</h3>
-      <span>XYZ Company</span>
-      <span class="timeline-date">Jan 2022 - Present</span>
-      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
-    </div>
-  </div>
-
-    <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
-    <div class="timeline-content">
-      <h3>Front-End Developer</h3>
-      <span>XYZ Company</span>
-      <span class="timeline-date">Jan 2022 - Present</span>
-      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
-    </div>
-  </div>
-      <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
-    <div class="timeline-content">
-      <h3>Front-End Developer</h3>
-      <span>XYZ Company</span>
-      <span class="timeline-date">Jan 2022 - Present</span>
-      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
-    </div>
-  </div>
-  <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
-    <div class="timeline-content">
-      <h3>Bachelor’s Degree in Computer Science</h3>
-      <span>ABC University</span>
-      <span class="timeline-date">2018 - 2022</span>
-      <p>Studied core programming, data structures, and modern web development techniques.</p>
-    </div>
-  </div>
-  <!-- Add more timeline items as needed -->
-    <div class="timeline-item">
-    <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
-    <div class="timeline-content">
-      <h3>Bachelor’s Degree in Computer Science</h3>
-      <span>ABC University</span>
-      <span class="timeline-date">2018 - 2022</span>
-      <p>Studied core programming, data structures, and modern web development techniques.</p>
-    </div>
-  </div>
-
-</section>
-    <section class="pricing">
-      <div class="container">
-        <p class="upper">Pricing plan</p>
-        <h2>Pricing options that meets your</h2>
-        <h2>budget and needs</h2>
-        <div class="plans">
-          <div class="plan">
-            <div>
-              <p>Week based</p>
-              <h2>
-                3000 EG
-                <span class="price-per">per Week</span>
-              </h2>
-              <p>For Companies or Customer who need small or trying tasks</p>
-            </div>
-            <div class="flex-start">
-              <div class="plan-det">
-                <p>tekreer at the end of week</p>
-              </div>
-              <div class="plan-det">
-                <p>35 hours working in week</p>
-              </div>
-              <div class="plan-det">
-                <p>3 ~ 5 free Edits</p>
-              </div>
-              <div class="plan-det">
-                <p>Fast cuntinue Qustions sience work</p>
-              </div>
-              <div class="plan-det">
-                <p>free work day to try work</p>
-              </div>
-              <div class="plan-det">
-                <p>25% Payment Before work</p>
-              </div>
-            </div>
-            <button class="about-btn plan-btn">Start Project</button>
-          </div>
-          <div class="plan populer">
-            <div>
-              <p>Project based</p>
-              <h2>
-                5k ~ 10k EG
-                <span class="price-per">per Project</span>
-              </h2>
-              <p>For Companies or Customer who have spacific project requirment</p>
-            </div>
-            <div class="flex-start">
-              <div class="plan-det">
-                <p>Standerd price decided on project size</p>
-              </div>
-              <div class="plan-det">
-                <p>30% free Edites</p>
-              </div>
-              <div class="plan-det">
-                <p>2 weeks support after finish</p>
-              </div>
-              <div class="plan-det">
-                <p>Takreer of project setuation every 2 & 3 days</p>
-              </div>
-              <div class="plan-det">
-                <p>show project on layers (design & develop & publish)</p>
-              </div>
-              <div class="plan-det">
-                <p>33% Payment Before work</p>
-              </div>
-            </div>
-            <button class="about-btn plan-btn">Start Project</button>
-          </div>
-          <div class="plan">
-            <div>
-              <p>Full Time Jop</p>
-              <h2>
-                13,000 EG
-                <span class="price-per">per Month</span>
-              </h2>
-              <p>Companies or customer that need full time Developer per month</p>
-            </div>
-            <div class="flex-start">
-              <div class="plan-det">
-                <p>160 hours (8 hours/day .. 5 day/week)</p>
-              </div>
-              <!-- <div class="plan-det">
-							<p>Task management(Design & Develop & Improvement)</p>
-              </div>-->
-              <div class="plan-det">
-                <p>Weekly meeting To See Progress</p>
-              </div>
-              <div class="plan-det">
-                <p>Unlaimted free Edits</p>
-              </div>
-              <div class="plan-det">
-                <p>10% ~ 20% Discound if wook more than month</p>
-              </div>
-              <div class="plan-det">
-                <p>Working on more than project</p>
-              </div>
-              <div class="plan-det">
-                <p>50% Payment Before work</p>
-              </div>
-            </div>
-            <button class="about-btn plan-btn">Start Project</button>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- 1  -->
     <section class="jops" id="Services">
       <div class="container">
@@ -759,6 +580,111 @@
       </div>
     </div>
     <!-- 1 Gallery -->
+    <section class="pricing">
+      <div class="container">
+        <p class="upper">Pricing plan</p>
+        <h2>Pricing options that meets your</h2>
+        <h2>budget and needs</h2>
+        <div class="plans">
+          <div class="plan">
+            <div>
+              <p>Weekly Plan</p>
+              <h2>
+                3,000 EGP
+                <span class="price-per">per Week</span>
+              </h2>
+              <p>Ideal for companies or customers needing small-scale or trial tasks.</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>Weekly report upon completion</p>
+              </div>
+              <div class="plan-det">
+                <p>35 hours of work per week</p>
+              </div>
+              <div class="plan-det">
+                <p>3 to 5 free revisions</p>
+              </div>
+              <div class="plan-det">
+                <p>Quick response to work-related inquiries</p>
+              </div>
+              <div class="plan-det">
+                <p>One free trial day</p>
+              </div>
+              <div class="plan-det">
+                <p>25% Payment Before work</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+          <div class="plan populer">
+            <div>
+              <p>Project based</p>
+              <h2>
+                5k ~ 10k EG
+                <span class="price-per">per Project</span>
+              </h2>
+              <p>For Companies or Customer who have spacific project requirment</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>Pricing is based on the project's scope</p>
+              </div>
+              <div class="plan-det">
+                <p>30% free Edites</p>
+              </div>
+              <div class="plan-det">
+                <p>Two weeks of support after project completion.</p>
+              </div>
+              <div class="plan-det">
+                <p>Project status reports every 3 to 4 days.</p>
+              </div>
+              <div class="plan-det">
+                <p>Project progress displayed in stages (design, development, and publication).</p>
+              </div>
+              <div class="plan-det">
+                <p>A 35% payment is required before work begins.</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+          <div class="plan">
+            <div>
+              <p>Full Time Jop</p>
+              <h2>
+                13,000 EG
+                <span class="price-per">per Month</span>
+              </h2>
+              <p>For companies or clients who need a full-time developer on a monthly basis.</p>
+            </div>
+            <div class="flex-start">
+              <div class="plan-det">
+                <p>160 hours (8 hours/day , 5 days/week)</p>
+              </div>
+              <!-- <div class="plan-det">
+							<p>Task management(Design & Develop & Improvement)</p>
+              </div>-->
+              <div class="plan-det">
+                <p>Weekly meetings to track progress</p>
+              </div>
+              <div class="plan-det">
+                <p>Unlaimted free Edits</p>
+              </div>
+              <div class="plan-det">
+                <p>10% - 20% discount if working for more than a month</p>
+              </div>
+              <div class="plan-det">
+                <p>Work on multiple projects</p>
+              </div>
+              <div class="plan-det">
+                <p>50% payment required before starting work</p>
+              </div>
+            </div>
+            <button class="about-btn plan-btn">Start Project</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- 0 Lang -->
     <section class="langauge" id="skills">
       <div class="cotact">
@@ -880,6 +806,69 @@
           <img class="modal-content" :src="currentImage" />
         </div>
       </div>
+    </section>
+    <section class="timeline">
+      <div class="timeline-content dis">
+        <h1>educations | Courses</h1>
+      </div>
+      <div class="timeline-item disapper">
+        <div class="timeline-icon">
+          <img src="../assets/img/degree-cap.png" class="icon2" />
+        </div>
+        <div class="timeline-content">
+          <h1>educations | Work</h1>
+        </div>
+      </div>
+      <div class="timeline-item disapper">
+        <div class="timeline-icon">
+          <img src="../assets/img/bag.png" class="icon2" />
+        </div>
+        <div class="timeline-content">
+          <h1>work experince</h1>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-content">
+          <h3>Bachelor in Computer Science</h3>
+          <span>Helwan University</span>
+          <span class="timeline-date">Septemper 2019 - July 2023</span>
+          <p>Studied core programming, data structures, and modern web development techniques.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-content">
+          <h3>Data Collector</h3>
+          <span>StatsBomb Company</span>
+          <span class="timeline-date">March 2022 - September 2022</span>
+          <p>Gathered data from freeze-frame images using a desktop app .</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-content">
+          <h3>Minders Workshops</h3>
+          <span>Minders</span>
+          <span class="timeline-date">Augast 2021 - October 2021 .</span>
+          <p>Completed workshops focusing on creating responsive websites</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" style="visibility: hidden;"></div>
+      <div class="timeline-item">
+        <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
+        <div class="timeline-content">
+          <h3>Web Devolpment professional Tracke</h3>
+          <span>Udacity</span>
+          <span class="timeline-date">January 2022 - April 2022 .</span>
+          <p>Studied core programming, data structures, and modern web development techniques.</p>
+        </div>
+      </div>
+      <!-- Add more timeline items as needed -->
     </section>
     <!-- 0  -->
     <footer class="foot">
