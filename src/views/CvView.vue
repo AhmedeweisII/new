@@ -145,6 +145,81 @@
         </div>
       </div>
     </section>
+    <section class="timeline">
+
+    <div class="timeline-item">
+          <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+          
+    <div class="timeline-content">
+      <h1>educations</h1>
+    </div>
+  </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fas fa-briefcase"></i></div>
+    <div class="timeline-content">
+  <h1>work experince</h1>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+    <div class="timeline-content">
+      <h3>Front-End Developer</h3>
+      <span>XYZ Company</span>
+      <span class="timeline-date">Jan 2022 - Present</span>
+      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
+    </div>
+  </div>
+
+    <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+    <div class="timeline-content">
+      <h3>Front-End Developer</h3>
+      <span>XYZ Company</span>
+      <span class="timeline-date">Jan 2022 - Present</span>
+      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
+    </div>
+  </div>
+
+    <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+    <div class="timeline-content">
+      <h3>Front-End Developer</h3>
+      <span>XYZ Company</span>
+      <span class="timeline-date">Jan 2022 - Present</span>
+      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
+    </div>
+  </div>
+      <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+    <div class="timeline-content">
+      <h3>Front-End Developer</h3>
+      <span>XYZ Company</span>
+      <span class="timeline-date">Jan 2022 - Present</span>
+      <p>Developed responsive interfaces using Vue.js and collaborated closely with backend teams.</p>
+    </div>
+  </div>
+  <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
+    <div class="timeline-content">
+      <h3>Bachelor’s Degree in Computer Science</h3>
+      <span>ABC University</span>
+      <span class="timeline-date">2018 - 2022</span>
+      <p>Studied core programming, data structures, and modern web development techniques.</p>
+    </div>
+  </div>
+  <!-- Add more timeline items as needed -->
+    <div class="timeline-item">
+    <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
+    <div class="timeline-content">
+      <h3>Bachelor’s Degree in Computer Science</h3>
+      <span>ABC University</span>
+      <span class="timeline-date">2018 - 2022</span>
+      <p>Studied core programming, data structures, and modern web development techniques.</p>
+    </div>
+  </div>
+
+</section>
     <section class="pricing">
       <div class="container">
         <p class="upper">Pricing plan</p>

@@ -1400,6 +1400,136 @@ input[type="email"]:focus {
   /* 1 plans */
   
 /* 0 */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slide-in 0.6s forwards ease-out;
+    width: calc(50% - 20px); /* Set width to 50% with a small gap */
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  .timeline-item:nth-child(even) {
+    transform: translateX(50px);
+  }
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%; /* Full width on small screens */
+      margin: 10px 0;
+    }
+  }
+  
+  
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #ff6f91, #ff9671);
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    background: #ff9671;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.2em;
+  }
+  
+  .timeline-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 60px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .timeline-content h3 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .timeline-content span {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .timeline-content p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .timeline-content:hover {
+    transform: translateY(-10px);
+    background-color: #f9f9f9;
+  }
+  
+  .timeline-date {
+    font-size: 0.8em;
+    color: #999;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 21px;
+    top: 49px;
+    background: #ff6f91;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline-item::before {
+      left: -10px;
+    }
+  
+    .timeline-content {
+      margin-left: 40px;
+    }
+  }
+  
+  /* Animation for timeline appearance */
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+/* 1 */
+/* 0 */
 /* 1 */
 
 @keyframes flashing {
