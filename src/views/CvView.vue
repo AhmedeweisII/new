@@ -6,14 +6,11 @@
         <nav class="navbar">
           <div class="icon2sy">
             <a href class="brand-link">
-              <!-- <div class="logo">
-                <div class="circle1"></div>
-                <div class="circle2"></div>
-              </div>-->
-              <span class="char" style="background-color:red;">A</span>
-              <!-- <span class="sec-name">B</span> -->
-              Ahmed_
-              <span style="color:red;">Eweis</span>
+              <div class="logo">
+                <img src="../assets/img/brand_logo.png" class="icon-special">
+              </div>
+              Falcon
+              <span style="color:red;">&nbsp;Core</span>
             </a>
           </div>
           <ul class="nav-list" id="navi-list">
@@ -690,7 +687,7 @@
       <div class="cotact">
         <form class="die-form">
           <div class="icon">
-            <img src="../assets/img/web.png" class="icon2" />
+            <img src="../assets/img/brand_logo.png" class="icon-special" />
           </div>
           <h2>Get Started today</h2>
           <div class="look-box">
@@ -876,15 +873,13 @@
         <div class="up-footer">
           <div class="one-col">
             <div class="icon2sy">
-              <a href class="brand-link brand-linkII">
-                <div class="logo">
-                  <div class="circle1"></div>
-                  <div class="circle2"></div>
-                </div>
-                <span class="char" style="background-color:red;">E</span>
-                <!-- <span class="sec-name">B</span> -->
-                eweis
-              </a>
+            <a href class="brand-link brand-linkII">
+              <div class="logo">
+                <img src="../assets/img/brand_logo.png" class="icon-special">
+              </div>
+              Falcon
+              <span style="color:red;">&nbsp;Core</span>
+            </a>
             </div>
             <div class="services-tilte">
               <span class="tit">Case Stady</span>
