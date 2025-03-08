@@ -717,32 +717,37 @@
     <!-- 0 Lang -->
     <section class="langauge" id="skills">
       <div class="cotact">
-        <form class="die-form">
-          <div class="icon">
-            <img src="../assets/img/brand_logo.png" class="icon-special" />
-          </div>
-          <h2>Get Started today</h2>
-          <div class="look-box">
-            <div class="look-content">
-              <span>Name</span>
-              <input type="text" class="look-field" />
-            </div>
-            <div class="look-content">
-              <span>E-Mail</span>
-              <input type="email" class="look-field" />
-            </div>
-            <div class="look-content">
-              <span>Budget</span>
-              <input type="text" class="look-field" />
-            </div>
-            <div class="look-content">
-              <span>Subject</span>
-              <input type="text" class="look-field" />
-            </div>
-            <textarea class="styled-textarea" placeholder="Enter your text here..."></textarea>
-          </div>
-          <button class="sen-btn">Send</button>
-        </form>
+        <form class="die-form" @submit.prevent="submitForm">
+    <div class="icon">
+      <img src="../assets/img/brand_logo.png" class="icon-special" />
+    </div>
+    <h2>Get Started today</h2>
+    <div class="look-box">
+      <div class="look-content">
+        <span>Name</span>
+        <input type="text" class="look-field" v-model="formData.name" required />
+      </div>
+      <div class="look-content">
+        <span>E-Mail</span>
+        <input type="email" class="look-field" v-model="formData.email" required />
+      </div>
+      <div class="look-content">
+        <span>Budget</span>
+        <input type="text" class="look-field" v-model="formData.budget" required />
+      </div>
+      <div class="look-content">
+        <span>Subject</span>
+        <input type="text" class="look-field" v-model="formData.subject" required />
+      </div>
+      <textarea
+        class="styled-textarea"
+        placeholder="Enter your text here..."
+        v-model="formData.message"
+        required
+      ></textarea>
+    </div>
+    <button type="submit" class="sen-btn">Send</button>
+  </form>
       </div>
       <div class="langauges">
         <div class="services-tilte">
@@ -1231,6 +1236,13 @@ export default {
       },
     ],
       currentTestimonialIndex: 0, 
+      formData: {
+        name: "",
+        email: "",
+        budget: "",
+        subject: "",
+        message: "",
+      },
     };
     
   },
@@ -1296,6 +1308,27 @@ export default {
       this.currentTestimonialIndex =
         (this.currentTestimonialIndex - 1 + this.testimonials.length) %
         this.testimonials.length;
+    },
+    async submitForm() {
+      try {
+        const response = await fetch("/api/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(this.formData),
+        });
+
+        if (response.ok) {
+          alert("Message sent successfully!");
+          this.formData = { name: "", email: "", budget: "", subject: "", message: "" }; // Reset form
+        } else {
+          alert("Failed to send message. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again.");
+      }
     },
   }
 };
