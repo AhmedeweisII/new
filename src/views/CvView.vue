@@ -18,19 +18,35 @@
               <a href="#home" class="ref">Home</a>
             </li>
             <li class="list-item">
-              <a href="#Services" class="ref">Services</a>
-            </li>
-            <li class="list-item">
-              <a href="#About" class="ref">About me</a>
-            </li>
-            <li class="list-item">
               <a href="#Projects" class="ref">Projects</a>
+            </li>
+            <li class="list-item">
+              <a href="#pricing" class="ref">Pricing</a>
             </li>
             <li class="list-item">
               <a href="#skills" class="ref">Skills</a>
             </li>
-            <li class="list-item">
-              <a href="#skills" class="ref">More</a>
+            <li class="list-item hidden-phone">
+              <a href="#experience" class="ref">Experience</a>
+            </li>
+            <li class="list-item hidden-phone">
+              <a href="#testimonials" class="ref">Testimonials</a>
+            </li>
+            <li class="list-item hidden-phone">
+              <a href="#Services" class="ref">Services</a>
+            </li>
+            <li class="list-item hidden-phone">
+              <a href="#About" class="ref">About me</a>
+            </li>
+            <li class="list-item " id="more-item" >
+              <a class="ref hidden2" id="more-link" @click="toggleno">More</a>
+              <!-- Nested List for Additional Links -->
+              <ul class="sub-nav-list" v-if="isMoreVisible">
+                <li><a href="#experience" class="ref">Experience</a></li>
+                <li><a href="#testimonials" class="ref">Testimonials</a></li>
+                <li><a href="#Services" class="ref">Services</a></li>
+                <li><a href="#About" class="ref">About me</a></li>
+              </ul>
             </li>
           </ul>
           <div class="menu" id="toggle-button" @click="toggleMenu">
@@ -97,7 +113,9 @@
       </div>
     </section>-->
     <!-- 1 top2 -->
+
     <!--  <div class=""></div> -->
+
     <!-- 1 jops  -->
     <section class="make">
       <div class="container">
@@ -107,11 +125,17 @@
             Hardworking professional skilled in Vue.js. Passionate about secure,
             optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful projects.
           </p>
-          <span>with 4+ years of experience</span>
-          <a
-            class="cotact-me"
-            href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp"
-          >Download CV</a>
+          <span>with 2+ years of experience</span>
+            <div class="hot-buttons">
+              <a class="cotact-me"
+                href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp">
+                Download CV
+              </a>
+              <a class="cotact-me"
+                href="#Projects">
+                View My work
+              </a>
+            </div>
         </div>
         <div class="right">
           <div class="photo-container">
@@ -143,7 +167,8 @@
       </div>
     </section>
 
-    <!-- 1  -->
+     
+    <!-- 0 jops -->
     <section class="jops" id="Services">
       <div class="container">
         <div class="services-tilte">
@@ -153,7 +178,7 @@
             <br />Performed For
             <br />Client happy
           </h2>
-          <button>View All services</button>
+          <button><a class="a-btn" href="#pricing">See Pricing Plan</a></button>
         </div>
 
         <div class="services">
@@ -196,13 +221,14 @@
       </div>
     </section>
     <!-- 1 jops  -->
-    <!-- 1 about me  -->
+
+    <!-- 0 about me  -->
     <section class="about-me" id="About">
       <div class="container">
         <div class="about-me-info">
           <div class="services-tilte">
-            <span>About me</span>
-            <h2>Direction With Me.</h2>
+            <span>Who I Am</span>
+            <h2>Crafting Stories Through Design.</h2>
             <p>
               Since 2020 I have served as a Front-end Developer,
               <br />where I have Develop
@@ -220,9 +246,9 @@
                   <br />make full websites make eyes happy
                 </p>
               </div>
-              <img src="../assets/img/eagle.png" class="icon2-L icon2-right" />
+              <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" />
             </div>
-            <button class="about-btn">About more</button>
+            <button class="about-btn" @click="scrollToSkills">About more</button>
           </div>
         </div>
         <div class="photo-box">
@@ -233,7 +259,8 @@
       </div>
     </section>
     <!-- 1  about me  -->
-    <!--  -->
+
+    <!-- 0 facts  -->
     <section class="facts">
       <div class="container">
         <div class="fact">
@@ -248,7 +275,7 @@
         </div>
         <div class="fact">
           <img src="../assets/img/responsive.png" class="icon2-m" />
-          <h2 class="number">3</h2>
+          <h2 class="number">2</h2>
           <h3>Years experience</h3>
         </div>
         <div class="fact">
@@ -258,8 +285,9 @@
         </div>
       </div>
     </section>
-    <!--  -->
-    <!-- Start Gallery -->
+    <!-- 1 facts  -->
+
+    <!-- 0 Gallery -->
     <div class="black" id="Projects">
       <div class="container">
         <div class="head-projects">
@@ -577,27 +605,29 @@
       </div>
     </div>
     <!-- 1 Gallery -->
-    <section class="pricing">
+
+    <!-- 0 Pricing -->
+    <section class="pricing" id="pricing">
       <div class="container">
-        <p class="upper">Pricing plan</p>
+        <h1 class="upper" style="text-align: center;" >Pricing plan</h1>
         <h2>Pricing options that meets your</h2>
         <h2>budget and needs</h2>
         <div class="plans">
           <div class="plan">
             <div>
-              <p>Weekly Plan</p>
+              <p>Hours Plan</p>
               <h2>
-                3,000 EGP
-                <span class="price-per">per Week</span>
+                100 EGP
+                <span class="price-per">per Hour</span>
               </h2>
               <p>Ideal for companies or customers needing small-scale or trial tasks.</p>
             </div>
             <div class="flex-start">
               <div class="plan-det">
-                <p>Weekly report upon completion</p>
+                <p>report upon completion hours</p>
               </div>
               <div class="plan-det">
-                <p>35 hours of work per week</p>
+                <p>Tasks start with a minimum of 1 hour.</p>
               </div>
               <div class="plan-det">
                 <p>3 to 5 free revisions</p>
@@ -606,13 +636,13 @@
                 <p>Quick response to work-related inquiries</p>
               </div>
               <div class="plan-det">
-                <p>One free trial day</p>
+                <p>One hour free trial</p>
               </div>
               <div class="plan-det">
-                <p>25% Payment Before work</p>
+                <p>50% Payment Before work</p>
               </div>
             </div>
-            <button class="about-btn plan-btn">Start Project</button>
+            <button class="about-btn plan-btn" @click="scrollToSkills"> Start Project</button>
           </div>
           <div class="plan populer">
             <div>
@@ -643,7 +673,7 @@
                 <p>A 35% payment is required before work begins.</p>
               </div>
             </div>
-            <button class="about-btn plan-btn">Start Project</button>
+            <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
           <div class="plan">
             <div>
@@ -677,11 +707,13 @@
                 <p>50% payment required before starting work</p>
               </div>
             </div>
-            <button class="about-btn plan-btn">Start Project</button>
+            <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
         </div>
       </div>
     </section>
+    <!-- 1 Pricing -->
+
     <!-- 0 Lang -->
     <section class="langauge" id="skills">
       <div class="cotact">
@@ -714,8 +746,8 @@
       </div>
       <div class="langauges">
         <div class="services-tilte">
-          <span>SKills</span>
-          <h2>My Languages Skills.</h2>
+          <span>Skills</span>
+          <h2>My Technical  Skills.</h2>
         </div>
         <div class="cols">
           <div class="col">
@@ -724,47 +756,47 @@
               <h2>Front-End</h2>
             </div>
             <div class="min-col">
-              <img class="icon2-m" />
+              <img class="icon2-m" src="../assets/img/skills/Html.png"/>
               <h3>Html</h3>
             </div>
             <div class="min-col">
-              <img src class />
+              <img  class="icon2-m" src="../assets/img/skills/css.png"/>
               <h3>Css</h3>
             </div>
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" src="../assets/img/skills/js.png"/>
               <h3>JS</h3>
             </div>
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" src="../assets/img/skills/vue.png"/>
               <h3>Vue Js</h3>
             </div>
           </div>
           <div class="col">
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" />
               <h2>Back-End</h2>
             </div>
-            <div class="min-col">
-              <img src class />
+            <!-- <div class="min-col">
+              <img class="icon2-m" />
               <h3>Php</h3>
-            </div>
+            </div> -->
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" src="../assets/img/skills/nodejs.png"/>
               <h3>Node Js</h3>
             </div>
-            <div class="min-col">
-              <img src class />
+            <!-- <div class="min-col">
+              <img class="icon2-m" />
               <h3>Laravel</h3>
-            </div>
+            </div> -->
           </div>
           <div class="col">
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" />
               <h2>Data Base</h2>
             </div>
             <div class="min-col">
-              <img src class />
+              <img class="icon2-m" src="../assets/img/skills/postgress.png"/>
               <h3>Postgres</h3>
             </div>
           </div>
@@ -772,39 +804,13 @@
       </div>
     </section>
     <!-- 1 Lang  -->
-    <!-- 0 certifcate  -->
-    <section class="certifcate">
-      <div class="container">
-        <div class="services-tilte">
-          <span class="tit">Case Stady</span>
-          <h2 style="color:black;">
-            Success is
-            <br />Just Around The
-            <br />Next Online Corner.
-          </h2>
-        </div>
-        <div class="slider">
-          <div
-            class="slider-inner"
-            :style="{ transform: `translateX(${offset}px)`, width: innerWidth + 'px' }"
-          >
-            <img
-              v-for="(image, index) in images"
-              :key="index"
-              :src="image"
-              class="slide"
-              @click="openModal(image)"
-            />
-          </div>
-        </div>
-        <!-- Full-Screen Image Modal -->
-        <div v-if="isModalOpen" class="modal" @click.self="closeModal">
-          <span class="close" @click="closeModal">&times;</span>
-          <img class="modal-content" :src="currentImage" />
-        </div>
-      </div>
-    </section>
-    <section class="timeline">
+
+
+    
+
+    <!-- 0 timeline -->
+     <h2 class="time-line-head">Education & Experience</h2>
+    <section class="timeline" id="experience">
       <div class="timeline-content dis">
         <h1>educations | Courses</h1>
       </div>
@@ -813,7 +819,7 @@
           <img src="../assets/img/degree-cap.png" class="icon2" />
         </div>
         <div class="timeline-content">
-          <h1>educations | Work</h1>
+          <h1>educations</h1>
         </div>
       </div>
       <div class="timeline-item disapper">
@@ -867,7 +873,118 @@
       </div>
       <!-- Add more timeline items as needed -->
     </section>
-    <!-- 0  -->
+    <!-- 1 timeline -->
+    <!-- 0 certifcate  -->
+    <section class="certifcate">
+      <div class="container">
+        <div class="services-tilte">
+          <span class="tit">Certifications</span>
+              <h2>Certified Skills <br>for a Digital World.</h2>
+        </div>
+        <div class="slider">
+          <div
+            class="slider-inner"
+            :style="{ transform: `translateX(${offset}px)`, width: innerWidth + 'px' }"
+          >
+            <img
+              v-for="(image, index) in images"
+              :key="index"
+              :src="image"
+              class="slide"
+              @click="openModal(image)"
+            />
+          </div>
+        </div>
+        <!-- Full-Screen Image Modal -->
+        <div v-if="isModalOpen" class="modal" @click.self="closeModal">
+          <span class="close" @click="closeModal">&times;</span>
+          <img class="modal-content" :src="currentImage" />
+        </div>
+      </div>
+    </section>
+    <!-- 1 certifcate -->
+    <!-- 0 Quats -->
+  <section class="talking" id="testimonials">
+    <div class="container">
+      <h2>What People Talk</h2>
+      <span class="spano">About Me</span>
+      <section class="testimonials">
+        <!-- Left Avatars -->
+        <div class="avatars">
+          <a
+            href="#"
+            class="left-top"
+            @click.prevent="showTestimonial(0)"
+          >
+            <img :src="testimonials[0].avatar" class="floating" />
+          </a>
+          <a
+            href="#"
+            class="left-center"
+            @click.prevent="showTestimonial(1)"
+          >
+            <img :src="testimonials[1].avatar" class="floating" />
+          </a>
+          <a
+            href="#"
+            class="left-bottom"
+            @click.prevent="showTestimonial(2)"
+          >
+            <img :src="testimonials[2].avatar" class="floating" />
+          </a>
+        </div>
+
+        <!-- Testimonial Container -->
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <img :src="currentTestimonial.avatar" alt="Profile" class="main-profile" />
+            <p class="quote">
+              <span class="fonty spano">&ldquo;</span>
+              {{ currentTestimonial.details }}
+              <span class="fonty spano" style="margin-top: -26px">&bdquo;</span>
+            </p>
+            <h3>{{ currentTestimonial.name }}</h3>
+            <p class="position">
+              {{ currentTestimonial.position }} - {{ currentTestimonial.company }}
+            </p>
+          </div>
+
+          <!-- Arrows -->
+          <div class="arrows">
+            <span class="arrow left spano" @click="previousTestimonial">&#8592;</span>
+            <span class="arrow right spano" @click="nextTestimonial">&#8594;</span>
+          </div>
+        </div>
+
+        <!-- Right Avatars -->
+        <div class="avatars">
+          <a
+            href="#"
+            class="right-top"
+            @click.prevent="showTestimonial(3)"
+          >
+            <img :src="testimonials[3].avatar" class="floating" />
+          </a>
+          <a
+            href="#"
+            class="right-center"
+            @click.prevent="showTestimonial(4)"
+          >
+            <img :src="testimonials[4].avatar" class="floating" />
+          </a>
+          <a
+            href="#"
+            class="right-bottom"
+            @click.prevent="showTestimonial(5)"
+          >
+            <img :src="testimonials[5].avatar" class="floating" />
+          </a>
+        </div>
+      </section>
+    </div>
+  </section>
+  <!-- 1 Quats -->
+     <!-- 0 footer -->
     <footer class="foot">
       <div class="container">
         <div class="up-footer">
@@ -882,11 +999,9 @@
             </a>
             </div>
             <div class="services-tilte">
-              <span class="tit">Case Stady</span>
+              <span class="tit">Success Stories</span>
               <h4>
-                Success is
-                Just Around The
-                Next Online Corner.
+                "Success is Closer Than You Think".
               </h4>
               <ul class="socila-icons">
                 <li class="li-item">
@@ -951,11 +1066,17 @@
             <h2>Servcieses</h2>
             <div class>
               <p>Web Development</p>
+              <p>Web design</p>
+              <p>Ui Coding</p>
+              <p>Api Connects</p>
+              <p>Improve SEO</p>
+              <p>Responsive Design</p>
+              <!-- <p>Web Development</p>
               <p>App Development</p>
               <p>Coud Engineering</p>
               <p>Strategy & Research</p>
               <p>Digital Agency</p>
-              <p>UI/UX Design</p>
+              <p>UI/UX Design</p> -->
             </div>
           </div>
           <div class="one-col">
@@ -1009,24 +1130,26 @@
           </div>
         </div>
         <div class="down-footer">
-          <div class="fr-d">A.design</div>
-          <div>© 2024 All Rights Reserved | Design by Ahmed Eweis</div>
+          <div class="fr-d">F.design</div>
+          <div>© 2025 All Rights Reserved | Design by Ahmed Eweis</div>
           <div>Privacy Policy . Terms and Conditions</div>
         </div>
       </div>
     </footer>
-    <!-- 1 -->
-    <!-- 1 certifcate -->
+    <!-- 1 footer -->
+
     <!-- 0  -->
     <section class>
       <div class="container"></div>
     </section>
     <!-- 1 -->
+
     <!-- 0  -->
     <section class>
       <div class="container"></div>
     </section>
     <!-- 1 -->
+
   </section>
 </template>
 
@@ -1047,8 +1170,69 @@ export default {
       offset: 0,
       slideWidth: 370, // 350px for image + 10px margin-left + 10px margin-right
       isModalOpen: false,
-      currentImage: ""
+      currentImage: "",
+      isMoreVisible: false,
+      testimonials: [
+      {
+        id: 1,
+        name: "John Doe",
+        details: "Working with this team was an absolute pleasure. Their attention to detail and creative approach helped us achieve our goals faster than expected. Highly recommended!",
+        position: "CEO",
+        company: "Pixel Lab",
+        avatar: require("@/assets/img/avatars/300-14.jpg"),
+      },
+      {
+        id: 2,
+        name: "Jane Smith",
+        details: "The level of professionalism and expertise is unmatched. They delivered a flawless product that exceeded our expectations. Truly a game-changer for our business.",
+        position: "CTO",
+        company: "Tech Solutions",
+        avatar: require("@/assets/img/avatars/300-27.jpg"),
+      },
+      {
+        id: 3,
+        name: "Ahmed Mohamed",
+        details: "I was impressed by their ability to understand our vision and turn it into reality. The team is highly skilled and always delivers on time. Great work!",
+        position: "Software Engineer",
+        company: "CodeCraft",
+        avatar: require("@/assets/img/avatars/300-4.jpg"),
+      },
+      {
+        id: 4,
+        name: "Wessam Ali",
+        details: "Their innovative solutions helped us streamline our processes and improve efficiency. The team is reliable, creative, and always goes the extra mile.",
+        position: "Product Manager",
+        company: "InnovateX",
+        avatar: require("@/assets/img/avatars/300-6.jpg"),
+      },
+      {
+        id: 5,
+        name: "Omar Hassan",
+        details: "The team's dedication and expertise are second to none. They transformed our ideas into a stunning product that our users love. Thank you for your hard work!",
+        position: "UI/UX Designer",
+        company: "DesignHub",
+        avatar: require("@/assets/img/avatars/300-9.jpg"),
+      },
+      {
+        id: 6,
+        name: "Hamza Showkat",
+        details: "From start to finish, the team was professional and responsive. They delivered a high-quality product that has significantly boosted our online presence.",
+        position: "Marketing Director",
+        company: "Digital Boost",
+        avatar: require("@/assets/img/avatars/300-20.jpg"),
+      },
+      {
+        id: 7,
+        name: "Harash Taka",
+        details: "Their technical expertise and creative solutions helped us overcome complex challenges. The team is a pleasure to work with, and the results speak for themselves.",
+        position: "Project Manager",
+        company: "Tech Innovators",
+        avatar: require("@/assets/img/avatars/300-22.jpg"),
+      },
+    ],
+      currentTestimonialIndex: 0, 
     };
+    
   },
   computed: {
     innerWidth() {
@@ -1056,7 +1240,10 @@ export default {
     },
     visibleSlides() {
       return Math.floor(this.$refs.slider.offsetWidth / this.slideWidth);
-    }
+    },
+    currentTestimonial() {
+      return this.testimonials[this.currentTestimonialIndex];
+    },
   },
   mounted() {
     window.addEventListener("resize", this.updateOffset);
@@ -1084,7 +1271,32 @@ export default {
     closeModal() {
       this.isModalOpen = false;
       this.currentImage = "";
-    }
+    },
+    toggleno() {
+      if(!this.isMoreVisible) {
+        this.isMoreVisible = true;
+      }else {
+        this.isMoreVisible = false;
+      }
+    },
+    scrollToSkills() {
+      const skillsSection = document.getElementById('skills');
+      if (skillsSection) {
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    showTestimonial(index) {
+      this.currentTestimonialIndex = index;
+    },
+    nextTestimonial() {
+      this.currentTestimonialIndex =
+        (this.currentTestimonialIndex + 1) % this.testimonials.length;
+    },
+    previousTestimonial() {
+      this.currentTestimonialIndex =
+        (this.currentTestimonialIndex - 1 + this.testimonials.length) %
+        this.testimonials.length;
+    },
   }
 };
 </script>

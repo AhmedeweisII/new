@@ -8,9 +8,9 @@
 
 :root {
     /* 0 colors */
-    --main-color: red;
+    --main-color: #C60925;
     --main-color-alt: #0ABF5E;
-    --main--color-third: #FC5E37;
+    --main--color-third: #81030F;
     --back-color: #333333;
     /* 1 colors */
 
@@ -138,20 +138,26 @@ input:focus {
     left: -25px;
 }
 
-button {
+button{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(to right, #C60925, #81030F);
+    background: linear-gradient(to right, #C60925, #81030F) ;
     border-radius: 18px;
-    color: white;
+    color: white ;
 }
 
-button:hover {
-    background: white;
+.a-btn {
+    color: inherit;
+    width: 100%;
+}
+button:hover{
+    background: white ;
     color: red;
 }
-
+.a-btn:hover {
+    color: inherit;
+}
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -181,6 +187,42 @@ button:hover {
 /* 1 Global Rules */
 
 /* 0 Header */
+/* Add these styles for the dropdown */
+#more-item {
+    position: relative;
+}
+.sub-nav-list {
+  position: absolute;
+  top: 100%; /* Position below the "More" link */
+  right: 0;
+  background: linear-gradient(to right, #0E0715, #1D1032);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 10px 0;
+  z-index: 10;
+}
+.sub-nav-list li {
+    margin: 10px 0;
+}
+.sub-nav-list a {
+    width: 100%;
+    background: linear-gradient(to right, #0E0715, #1D1032)
+}
+.sub-nav-list.active {
+  display: block; 
+}
+
+.sub-nav-list .ref {
+  padding: 0px 15px;
+  white-space: nowrap; 
+  color: white;
+}
+
+.sub-nav-list .ref:hover {
+  width: 100%;
+
+}
 .top2 {
     background-color: black;
 }
@@ -194,12 +236,23 @@ button:hover {
     flex-direction: row;
     padding-bottom: 6px;
 }
-
+@media (min-width:768px) {
+    .hidden-phone {
+        display: none;
+    }
+}
+.hidden2 {
+    cursor: pointer;
+}
 @media (max-width:768px) {
     .navbar {
         flex-direction: column;
         padding: 5px 0px 10px 0;
     }
+    .hidden2 {
+        visibility: hidden;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -288,6 +341,7 @@ button:hover {
         align-items: flex-start;
         align-self: flex-start;
         background-color: transparent;
+        width: 100%;
     }
 }
 
@@ -593,6 +647,7 @@ button:hover {
     background-color: #555;
 }
 
+
 .cotact-me {
     padding: 10px 20px;
     font-size: 16px;
@@ -602,6 +657,7 @@ button:hover {
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin-right: 10px;
 }
 
 .cotact-me:hover {
@@ -689,8 +745,9 @@ button:hover {
 /* 1 Top*/
 /* */
 .jops {
-    background-color: #111216;
+    /* background-color: #111216; */
     padding-top: 60px;
+    background: linear-gradient(to right, #0E0715, #1D1032);
 }
 
 .jops .container {
@@ -708,6 +765,7 @@ button:hover {
 .services-tilte span {
     color: red;
     text-decoration: underline;
+    font-size: 1.5em;
 }
 
 .services-tilte h2 {
@@ -723,9 +781,7 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     grid-gap: 10px;
-    /* Gap between grid items */
     padding: 20px;
-    /* Padding around the grid */
 }
 
 .service {
@@ -738,10 +794,11 @@ button:hover {
     justify-content: space-between;
     border: solid 2px #d4d4d4;
     border-radius: 5px;
+
 }
 
 .service:hover {
-    background-color: #3B3C3F;
+    background-color:#000000;
 }
 
 .service img {
@@ -1004,6 +1061,7 @@ button:hover {
     background-color: #18191D;
 }
 
+
 @media (max-width: 768px) {
     .langauge {
         flex-direction: column;
@@ -1129,7 +1187,12 @@ input[type="email"]:focus {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
 }
-
+.min-col {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
 .min-col h2 {
     color: red;
 }
@@ -1143,6 +1206,7 @@ input[type="email"]:focus {
     text-align: center;
     transition: 0.5s;
     cursor: pointer;
+    display: flex;
 }
 
 .min-col h3:hover {
@@ -1165,7 +1229,7 @@ input[type="email"]:focus {
 .certifcate {
     padding-top: 60px;
     padding-bottom: 100px;
-    background-color: #ddd;
+    background:#18191D;
 }
 
 .services-tilte .tit {
@@ -1546,9 +1610,13 @@ input[type="email"]:focus {
     color: #fff;
     padding: 10px;
     border-radius: 50%;
-    font-size: 1.2em;
+    font-size: 3px;
 }
-
+.time-line-head {
+    font-size: 2em;
+    color: #FD3C3C;
+    text-align: center;
+}
 .timeline-content {
     padding: 20px;
     background-color: #fff;
@@ -1627,6 +1695,268 @@ input[type="email"]:focus {
     }
 }
 
+/* 0 Quats*/
+.talking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0E0715, #1D1032);
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonials {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+}
+
+.talking h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+}
+
+.spano {
+    font-size: 28px;
+    color: #ff3c3c;
+    font-weight: 700;
+}
+.testimonial-container {
+    position: relative;
+    margin-top: 30px;
+}
+
+.testimonial {
+    position: relative;
+}
+.testimonial h3 {
+    color: red;
+    margin-bottom: 10px;
+}
+.main-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.quote {
+    font-size: 18px;
+    color: #c2c3c5;
+    width: 60%;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.talking h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.position {
+    font-size: 14px;
+    color: white;
+}
+
+.floating-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floating {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.arrows {
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 50px;
+    color: #555;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arrow:hover {
+    color: #ff3c3c;
+}
+.fonty {
+    font-family: fangsong;
+    color:#ff3c3c;
+    font-size: 50px;
+    display: inline-flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.avatars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.left-top, .left-center, .left-bottom {
+    position: absolute;
+    z-index: 10;
+}
+
+.left-top {
+    top: 50%;
+    left: 0;
+}
+.left-center {
+    top: 43px;
+    left: 107px;
+}
+.left-bottom {
+    bottom: 0;
+    left: 71px;
+}
+
+.right-top, .right-center, .right-bottom {
+    position: absolute;
+    z-index: 10;
+}
+
+.right-top {
+    top: 50%;
+    right: 0;
+}
+.right-center {
+    top: 43px;
+    right: 107px;
+}
+.right-bottom {
+    bottom: 0;
+    right: 71px;
+}
+/* Media Queries للتجاوب مع أحجام الشاشات */
+
+/* شاشات متوسطة الحجم (أقل من 992px) */
+@media (max-width: 992px) {
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-top, .right-center, .right-bottom {
+        position:static;
+        z-index: 10;
+    }
+    .left-top, .left-center, .left-bottom {
+        position:static;
+        z-index: 10;
+        margin-top: 20px;
+    }
+    .avatars {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quote {
+        width: 80%; /* زيادة عرض النص في الشاشات المتوسطة */
+    }
+
+    .testimonial-container {
+        margin-top: 20px;
+    }
+
+    .arrows {
+        margin-top: 20px;
+    }
+    .avatars {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+/* شاشات صغيرة الحجم (أقل من 768px) */
+@media (max-width: 768px) {
+    .talking h2 {
+        font-size: 24px; /* تصغير حجم العنوان */
+    }
+
+    .spano {
+        font-size: 24px; /* تصغير حجم النص الملون */
+    }
+
+    .quote {
+        width: 90%; /* زيادة عرض النص في الشاشات الصغيرة */
+        font-size: 16px; /* تصغير حجم الخط */
+    }
+
+    .main-profile {
+        width: 60px; /* تصغير حجم الصورة الرئيسية */
+        height: 60px;
+    }
+
+    .talking h3 {
+        font-size: 16px; /* تصغير حجم اسم الشخص */
+    }
+
+    .position {
+        font-size: 12px; /* تصغير حجم المنصب */
+    }
+
+    .arrow {
+        font-size: 40px; /* تصغير حجم الأسهم */
+    }
+}
+
+/* شاشات صغيرة جدًا (أقل من 576px) */
+@media (max-width: 576px) {
+    .talking h2 {
+        font-size: 20px; /* تصغير حجم العنوان أكثر */
+    }
+
+    .spano {
+        font-size: 20px; /* تصغير حجم النص الملون أكثر */
+    }
+
+    .quote {
+        width: 100%; /* جعل النص يأخذ العرض الكامل */
+        font-size: 14px; /* تصغير حجم الخط أكثر */
+    }
+
+    .main-profile {
+        width: 50px; /* تصغير حجم الصورة الرئيسية أكثر */
+        height: 50px;
+    }
+
+    .talking h3 {
+        font-size: 14px; /* تصغير حجم اسم الشخص أكثر */
+    }
+
+    .position {
+        font-size: 10px; /* تصغير حجم المنصب أكثر */
+    }
+
+    .arrow {
+        font-size: 30px; /* تصغير حجم الأسهم أكثر */
+    }
+}
+
+/* 1 Quats*/
 /* Animation for timeline appearance */
 @keyframes slide-in {
     to {
