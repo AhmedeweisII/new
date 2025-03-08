@@ -13,8 +13,8 @@ module.exports = async (req, res) => {
     const transporter = nodemailer.createTransport({
       service: "gmail", // Use Gmail as the email service
       auth: {
-        user: "ahmedeweiso@gmail.com", // Your email address
-        pass: "3'0_a-4TAd0a", // Your email password or app-specific password
+        user: "mhmdnyrtt@gmail.com", // Your email address
+        pass: "01204741212Wesso", // Your email password or app-specific password
       },
     });
 
