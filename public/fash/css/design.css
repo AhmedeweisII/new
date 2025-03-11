@@ -112,6 +112,7 @@ button {
 }
 /* 1 Global Rules */
 /* 0 Header */
+
 .navbar {
   color: black;
   display: flex;
@@ -131,9 +132,12 @@ button {
 @media (max-width: 480px) {
   .iconsy {
     justify-self: flex-end;
- /* align-self: flex-end;  english + go to menu 480 left 15px insted of right 15px + go to active 480 align-self: flex-start; */
     align-self: flex-start;
     padding: 5px 5px 0 0;
+    align-self: flex-end;
+  }
+  .iconsyno {
+    align-self:flex-start ;
   }
 }
 
@@ -222,7 +226,7 @@ button {
     display: block;
     position: absolute;
  /* left: 15px;  english + go to iconsy 480 align-self: flex-end + go to active 480 align-self: flex-start;  */
-    right: 15px;
+    left: 15px;
     top: 15px;
 
   }
@@ -241,9 +245,9 @@ button {
     align-items: center;
     padding-left: 0px;
     align-items: flex-start;
- /* align-self: flex-start; english + go to iconsy 480 align-self: flex-end + go to menu 480 left 15px insted of right 15px */
     align-self: flex-end;
     background-color: transparent;
+    width: 100%;
   }
 }
 .logo-name {
@@ -258,20 +262,7 @@ button {
 }
 /* 1 Header */
 /* 0 Landing */
-.Blinder-land {
-  padding-top: var(--main-padding-top);
-  margin-bottom: 50px;
-  height:100vh;
-  background-image: url('../img/01-1.png');
-  background-size: initial; 
-  background-repeat: no-repeat;
-  background-position: center;
-}
-@media (min-width: 992px) {
-  .Blinder-land {
-    background:none;
-  }
-}
+
 .Blinder-land  .container {
   display:flex;
   flex-direction:row;
@@ -283,6 +274,9 @@ button {
   .Blinder-land  .container {
     flex-direction:column-reverse;
     align-items: flex-start;
+  }
+  .Blinder-land {
+    margin-top: 20px;
   }
 }
 /* first flex */
@@ -532,19 +526,18 @@ button {
 /* 0 companies */
 
 .companies {
-  padding-top:50px ;
-  padding-bottom:50px;
-  background-color: #F9FBFF;
-}
-
-.all-compnies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; */
-}
+  padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F9FBFF;
+  }
+  
+  .all-compnies {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 .single-company {
   display: flex;
   justify-content: center;
@@ -695,6 +688,10 @@ button {
 }
 .interstes-col {
   grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+  justify-self: center;
+}
+.last-one{
+  justify-self: baseline;
 }
 .interstes-part {
   width: 250px;

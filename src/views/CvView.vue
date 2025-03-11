@@ -231,7 +231,7 @@
               gives me a high chance for Make your website ..
             </p>
             <div class="meddile-about">
-              <img src="../assets/img/trophy.png" class="icon2-L icon2-left" />
+              <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s" />
               <div>
                 <h3 class="mession-h">My Mession</h3>
                 <p>
@@ -364,7 +364,7 @@
         </span>
       </div>
     </div>
-    <div class="gallery" v-if="shows === '1'">
+    <div class="gallery"  v-if="shows === '1'">
       <div class="container">
         <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
           <div class="infoo">
@@ -1200,6 +1200,10 @@ export default {
     },
     showo() {
       this.shows = this.shows === "0" ? "1" : "0";
+      const alotSection = document.getElementById('pricing');
+      if (alotSection) {
+        alotSection.scrollIntoView({ behavior: 'smooth' });
+      }
     },
     showSlides() {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;

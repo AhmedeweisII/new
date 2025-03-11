@@ -743,7 +743,11 @@ button:hover{
 
 
 /* 1 Top*/
+
 /* */
+
+
+
 .jops {
     /* background-color: #111216; */
     padding-top: 60px;
@@ -762,6 +766,14 @@ button:hover{
     }
 }
 
+/* @media (max-width: 408px) {
+    .hot-buttons {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+} */
+
 .services-tilte span {
     color: red;
     text-decoration: underline;
@@ -779,9 +791,9 @@ button:hover{
 
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .service {
@@ -791,7 +803,6 @@ button:hover{
     font-size: 1.2em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border: solid 2px #d4d4d4;
     border-radius: 5px;
 
@@ -851,6 +862,11 @@ button:hover{
     .photo-box {
         overflow: hidden;
         margin-bottom: 20px;
+    }
+}
+@media (max-width: 760px) {
+    .hiden-s {
+        display: none;
     }
 }
 
@@ -1082,6 +1098,13 @@ button:hover{
     width: 80%;
     border: solid 2px #ddd;
 }
+@media (max-width: 768px) {
+    .die-form  {
+        padding: 20px 17px;
+        width: 95%;
+    }
+}
+
 
 .icon {
     text-align: center;
@@ -1206,7 +1229,6 @@ input[type="email"]:focus {
     text-align: center;
     transition: 0.5s;
     cursor: pointer;
-    display: flex;
 }
 
 .min-col h3:hover {
