@@ -129,7 +129,8 @@
           <span>with 2+ years of experience</span>
           <div class="hot-buttons">
             <a class="cotact-me"
-              href="https://drive.google.com/uc?export=download&id=1-4frfY68mzkV3dfB4dE5_9PBmtZK-jdp">
+            
+              href="https://drive.google.com/uc?export=download&id=1SnRL_9IaJKZTE1MaxcLoVPAs-II53a4Q">
               Download CV
             </a>
             <a class="cotact-me" href="#Projects">
