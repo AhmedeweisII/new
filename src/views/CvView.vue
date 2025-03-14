@@ -130,7 +130,7 @@
           <div class="hot-buttons">
             <a class="cotact-me"
             
-              href="https://drive.google.com/uc?export=download&id=1SnRL_9IaJKZTE1MaxcLoVPAs-II53a4Q">
+              href="https://drive.google.com/uc?export=download&id=1fE20ABdQccxiMaG14sy6mvklFJ7I87hK">
               Download CV
             </a>
             <a class="cotact-me" href="#Projects">
