@@ -149,7 +149,7 @@
                 target="_blank" rel="noopener" aria-label="Send email">
                 <img src="../assets/img/icon2.png" alt="Email icon" />
               </a>
-              <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank" rel="noopener"
+              <a href="https://github.com/Ahmedeweis" class="social-icon" target="_blank" rel="noopener"
                 aria-label="GitHub Profile">
                 <img src="../assets/img/icon3.png" alt="GitHub icon" />
               </a>
@@ -298,7 +298,7 @@
     <!-- 1 facts  -->
 
     <!-- 0 Gallery -->
-    <div class="container">
+    <div class="container" id="Projects">
       <div class="head-projects">
         <h2 class="main-title">Projects</h2>
         <button @click="showo">View All</button>
@@ -612,7 +612,7 @@
       <div class="container">
         <div class="services-tilte">
           <span class="tit">Certifications</span>
-          <h2>Certified Skills <br>for a Digital World.</h2>
+          <h2 style="color: black;">Certified Skills <br>for a Digital World.</h2>
         </div>
         <div class="slider">
           <div class="slider-inner" :style="{ transform: `translateX(${offset}px)`, width: innerWidth + 'px' }">
@@ -742,12 +742,12 @@
           <div class="one-col servo">
             <h2>Servcieses</h2>
             <div class>
-              <p>Web Development</p>
-              <p>Web design</p>
-              <p>Ui Coding</p>
-              <p>Api Connects</p>
-              <p>Improve SEO</p>
-              <p>Responsive Design</p>
+              <p><a href="#Projects" class="c-blueviolet">Web Development</a></p>
+              <p><a href="#Projects" class="c-blueviolet">Web design</a></p>
+              <p><a href="#Projects" class="c-blueviolet">Ui Coding</a></p>
+              <p><a href="#Projects" class="c-blueviolet">Api Connects</a></p>
+              <p><a href="#Projects" class="c-blueviolet">Improve SEO</a></p>
+              <p><a href="#Projects" class="c-blueviolet">Responsive DesignImprove SEO</a></p>
               <!-- <p>Web Development</p>
               <p>App Development</p>
               <p>Coud Engineering</p>
@@ -771,8 +771,8 @@
               <div class="contact-row">
                 <img src="../assets/img/gmail.png" class="icon2" />
                 <div>
+                  <p>Ahmed.eweiis@gmail.com</p>
                   <p>Ahmedeweiso@gmail.com</p>
-                  <p>elkaseh95@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -780,31 +780,33 @@
               <div class="contact-row">
                 <img src="../assets/img/placeholder.png" class="icon2" />
                 <div>
-                  <p>168/170 , Avenue 01 , mirpur</p>
+                  <!-- <p>168/170 , Avenue 01 , mirpur</p> -->
+                  <p>14/1200 , El Salam 02 , El Nahda</p>
                   <p>Cairo ,Egypt</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="photoos">
-            <div>
-              <div class="backgrond">
-                <img src="../assets/img/imgs/gallery-07.png" class="icon2-L" />
-              </div>
-              <div class="backgrond">
-                <img src="../assets/img/imgs/gallery-06.png" class="icon2-L" />
-              </div>
-            </div>
+					<div>
+						<div class="backgrond">
+							<a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
+						</div>
+            <div class="backgrond">
+							<a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
+						</div>
 
-            <div>
-              <div class="backgrond">
-                <img src="../assets/img/imgs/gallery-02.png" class="icon2-L" />
-              </div>
-              <div class="backgrond">
-                <img src="../assets/img/imgs/gallery-04.png" class="icon2-L" />
-              </div>
-            </div>
-          </div>
+					</div>
+
+					<div>
+						<div class="backgrond">
+							<a :href="mainProjects[1].link" target="_blank"><img :src="mainProjects[1].img" class="icon2-L" /></a>
+						</div>
+						<div class="backgrond">
+							<a :href="mainProjects[3].link" target="_blank"><img :src="mainProjects[3].img" class="icon2-L" /></a>
+						</div>
+					</div>
+				</div>
         </div>
         <div class="down-footer">
           <div class="fr-d">F.design</div>
@@ -815,17 +817,6 @@
     </footer>
     <!-- 1 footer -->
 
-    <!-- 0  -->
-    <section class>
-      <div class="container"></div>
-    </section>
-    <!-- 1 -->
-
-    <!-- 0  -->
-    <section class>
-      <div class="container"></div>
-    </section>
-    <!-- 1 -->
 
   </section>
 </template>
