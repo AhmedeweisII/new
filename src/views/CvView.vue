@@ -1,16 +1,15 @@
 <template>
   <section class="about">
-    <!-- 0 header -->
-    <header class="top" style="background-color: black">
+    <!-- 0 header (SEO Improved, without affecting design) -->
+    <header class="top" style="background-color: black;">
       <div class="container" id="home">
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
           <div class="icon2sy">
-            <a href class="brand-link">
+            <a href="#home" class="brand-link" aria-label="Falcon Core Home">
               <div class="logo">
-                <img src="../assets/img/brand_logo.png" class="icon-special">
+                <img src="../assets/img/brand_logo.png" class="icon-special" alt="Falcon Core Logo" />
               </div>
-              Falcon
-              <span style="color:red;">&nbsp;Core</span>
+              Falcon<span style="color:red;">&nbsp;Core</span>
             </a>
           </div>
           <ul class="nav-list" id="navi-list">
@@ -38,8 +37,9 @@
             <li class="list-item hidden-phone">
               <a href="#About" class="ref">About me</a>
             </li>
-            <li class="list-item " id="more-item">
-              <a class="ref hidden2" id="more-link" @click="toggleno">More</a>
+            <li class="list-item" id="more-item">
+              <a class="ref hidden2" id="more-link" @click="toggleno" aria-haspopup="true"
+                aria-expanded="false">More</a>
               <!-- Nested List for Additional Links -->
               <ul class="sub-nav-list" v-if="isMoreVisible">
                 <li><a href="#experience" class="ref">Experience</a></li>
@@ -49,7 +49,7 @@
               </ul>
             </li>
           </ul>
-          <div class="menu" id="toggle-button" @click="toggleMenu">
+          <div class="menu" id="toggle-button" @click="toggleMenu" aria-label="Toggle navigation menu">
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div class="menu-line"></div>
@@ -117,137 +117,145 @@
     <!--  <div class=""></div> -->
 
     <!-- 1 jops  -->
-    <section class="make">
+    <section class="make" aria-labelledby="intro-heading">
       <div class="container">
         <div class="left">
-          <h1>Front-End Developer</h1>
+          <h1 id="intro-heading">Front-End Developer</h1>
           <p>
-            Hardworking professional skilled in Vue.js. Passionate about secure,
+            Hardworking professional skilled in <strong>Vue.js</strong>. Passionate about secure,
             optimized code. Eager to tackle new challenges and leverage cutting-edge technologies for impactful
             projects.
           </p>
-          <span>with 2+ years of experience</span>
+          <span>With 2+ years of experience</span>
           <div class="hot-buttons">
-            <a class="cotact-me"
-            
-              href="https://drive.google.com/uc?export=download&id=1fE20ABdQccxiMaG14sy6mvklFJ7I87hK">
+            <a class="cotact-me" href="https://drive.google.com/uc?export=download&id=1fE20ABdQccxiMaG14sy6mvklFJ7I87hK"
+              title="Download CV in PDF format">
               Download CV
             </a>
-            <a class="cotact-me" href="#Projects">
-              View My work
+            <a class="cotact-me" href="#Projects" title="See my project portfolio">
+              View My Work
             </a>
           </div>
         </div>
         <div class="right">
           <div class="photo-container">
-            <img src="../assets/img/3.jpg" alt="Your Photo" class="profile-photo" />
-            <div class="orbit">
-              <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank">
-                <img src="../assets/img/icon1.png" alt="Social Icon 1" />
+            <img src="../assets/img/3.jpg" alt="Ahmed Eweis profile photo" class="profile-photo" />
+            <div class="orbit" aria-label="Social media links">
+              <a href="https://www.instagram.com/ahmed_eweis0/" class="social-icon" target="_blank" rel="noopener"
+                aria-label="Instagram">
+                <img src="../assets/img/icon1.png" alt="Instagram icon" />
               </a>
               <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmedeweiso@gmail.com" class="social-icon"
-                target="_blank">
-                <img src="../assets/img/icon2.png" alt="Social Icon 2" />
+                target="_blank" rel="noopener" aria-label="Send email">
+                <img src="../assets/img/icon2.png" alt="Email icon" />
               </a>
-              <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank">
-                <img src="../assets/img/icon3.png" alt="Social Icon 3" />
+              <a href="https://github.com/AhmedeweisII" class="social-icon" target="_blank" rel="noopener"
+                aria-label="GitHub Profile">
+                <img src="../assets/img/icon3.png" alt="GitHub icon" />
               </a>
-              <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank">
-                <img src="../assets/img/icon4.png" alt="Social Icon 4" />
+              <a href="https://www.linkedin.com/in/ahmed-eweis/" class="social-icon" target="_blank" rel="noopener"
+                aria-label="LinkedIn Profile">
+                <img src="../assets/img/icon4.png" alt="LinkedIn icon" />
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
 
     <!-- 0 jops -->
-    <section class="jops" id="Services">
+    <section class="jops" id="Services" aria-labelledby="services-heading">
       <div class="container">
         <div class="services-tilte">
-          <span>what I can do</span>
-          <h2>
-            I work
-            <br />Performed For
-            <br />Client happy
+          <span>What I Can Do</span>
+          <h2 id="services-heading">
+            I work<br />
+            Performed For<br />
+            Client happy
           </h2>
-          <button><a class="a-btn" href="#pricing">See Pricing Plan</a></button>
+          <button>
+            <a class="a-btn" href="#pricing" title="View Pricing Plans">See Pricing Plan</a>
+          </button>
         </div>
 
         <div class="services">
-          <div class="service">
-            <img src="../assets/img/blog.png" class="icon2" />
+          <article class="service">
+            <img src="../assets/img/blog.png" class="icon2" alt="Web design service icon" />
             <div class="serv-info">
-              <h3>Web design</h3>
-              <p>I can Design UI for system Reaquiment</p>
-              <a href>Read more</a>
+              <h3>Web Design</h3>
+              <p>I can design UI based on system requirements.</p>
+              <a href="#" title="Read more about Web Design services">Read more</a>
             </div>
-          </div>
+          </article>
 
-          <div class="service">
-            <img src="../assets/img/cloud-computing.png" class="icon2" />
+          <article class="service">
+            <img src="../assets/img/cloud-computing.png" class="icon2" alt="Development service icon" />
             <div class="serv-info">
-              <h3>Developing</h3>
-              <p>I can Modfy your current project</p>
-              <a href>Read more</a>
+              <h3>Development</h3>
+              <p>I can modify or enhance your current project.</p>
+              <a href="#" title="Read more about Development services">Read more</a>
             </div>
-          </div>
+          </article>
 
-          <div class="service">
-            <img src="../assets/img/code.png" class="icon2" />
+          <article class="service">
+            <img src="../assets/img/code.png" class="icon2" alt="UI Coding service icon" />
             <div class="serv-info">
-              <h3>Ui Coding</h3>
-              <p>If you have PSD file or any ui a can code it</p>
-              <a href>Read more</a>
+              <h3>UI Coding</h3>
+              <p>If you have a PSD or design file, I can code it into a responsive layout.</p>
+              <a href="#" title="Read more about UI Coding services">Read more</a>
             </div>
-          </div>
+          </article>
 
-          <div class="service">
-            <img src="../assets/img/multi-channel.png" class="icon2" />
+          <article class="service">
+            <img src="../assets/img/multi-channel.png" class="icon2" alt="API connection service icon" />
             <div class="serv-info">
-              <h3>Api Connects</h3>
-              <p>have problem with connect front & Back ?</p>
-              <a href>Read more</a>
+              <h3>API Integration</h3>
+              <p>Having trouble connecting frontend and backend? I can help.</p>
+              <a href="#" title="Read more about API integration services">Read more</a>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
+
     <!-- 1 jops  -->
 
     <!-- 0 about me  -->
-    <section class="about-me" id="About">
+    <section class="about-me" id="About" aria-labelledby="about-heading">
       <div class="container">
         <div class="about-me-info">
           <div class="services-tilte">
             <span>Who I Am</span>
-            <h2>Crafting Stories Through Design.</h2>
+            <h2 id="about-heading">Crafting Stories Through Design</h2>
             <p>
-              Since 2020 I have served as a Front-end Developer,
-              <br />where I have Develop
-              many Systems ..
-              <br />I also provide high-quality designs at the lowest possible cost ..
-              <br />Which
-              gives me a high chance for Make your website ..
+              Since 2020, I have served as a Front-End Developer,<br />
+              where I have developed many systems.<br />
+              I also provide high-quality designs at the lowest possible cost,<br />
+              which gives me a great opportunity to create your website.
             </p>
+
             <div class="meddile-about">
-              <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s" />
+              <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s"
+                alt="Trophy icon representing achievements" />
               <div>
-                <h3 class="mession-h">My Mession</h3>
+                <h3 class="mession-h">My Mission</h3>
                 <p>
-                  I want to be best front-end in egypt and The Arab world
-                  <br />make full websites make eyes happy
+                  I aim to become the best front-end developer in Egypt and the Arab world,<br />
+                  creating full websites that delight users' eyes.
                 </p>
               </div>
-              <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" />
+              <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" alt="Brand logo icon" />
             </div>
-            <button class="about-btn" @click="scrollToSkills">About more</button>
+
+            <button class="about-btn" @click="scrollToSkills" title="Learn more about me">About more</button>
           </div>
         </div>
+
         <div class="photo-box">
           <div class="photoo">
-            <img src="../assets/img/your-photoo.jpg" />
+            <img src="../assets/img/your-photoo.jpg" alt="Photo of the developer" />
           </div>
         </div>
       </div>
@@ -255,105 +263,62 @@
     <!-- 1  about me  -->
 
     <!-- 0 facts  -->
-    <section class="facts">
+    <section class="facts" id="facts" aria-labelledby="facts-heading">
+
       <div class="container">
+
         <div class="fact">
-          <img src="../assets/img/list.png" class="icon2-m" />
+          <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
           <h2 class="number">24</h2>
-          <h3>Projects completed</h3>
+          <h3>Projects Completed</h3>
         </div>
+
         <div class="fact">
-          <img src="../assets/img/reputation.png" class="icon2-m" />
+          <img src="../assets/img/reputation.png" class="icon2-m"
+            alt="Reputation icon representing satisfied clients" />
           <h2 class="number">10</h2>
-          <h3>Satisfied clients</h3>
+          <h3>Satisfied Clients</h3>
         </div>
+
         <div class="fact">
-          <img src="../assets/img/responsive.png" class="icon2-m" />
+          <img src="../assets/img/responsive.png" class="icon2-m"
+            alt="Responsive icon representing years of experience" />
           <h2 class="number">2</h2>
-          <h3>Years experience</h3>
+          <h3>Years of Experience</h3>
         </div>
+
         <div class="fact">
-          <img src="../assets/img/trustworthiness.png" class="icon2-m" />
+          <img src="../assets/img/trustworthiness.png" class="icon2-m"
+            alt="Trust icon representing certificates earned" />
           <h2 class="number">11</h2>
-          <h3>Certificates</h3>
+          <h3>Certificates Earned</h3>
         </div>
       </div>
     </section>
     <!-- 1 facts  -->
 
     <!-- 0 Gallery -->
-    <div class="black" id="Projects">
-      <div class="container">
-        <div class="head-projects">
-          <h2 class="main-title">Projects</h2>
-          <button @click="showo">View All</button>
-        </div>
+    <div class="container">
+      <div class="head-projects">
+        <h2 class="main-title">Projects</h2>
+        <button @click="showo">View All</button>
       </div>
     </div>
     <div class="gallery" id="gallery">
+
       <div class="container">
-        <a href="/fash/index.html" class="box" target="_blank">
+
+        <a v-for="(project, index) in mainProjects" :key="index" :href="project.link" class="box" target="_blank">
           <div class="infoo">
-            <h2>Fashoin</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
+            <h2>{{ project.title }}</h2>
+            <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
           </div>
           <div class="image">
-            <img src="../assets/img/imgs/gallery-01.png" alt />
-          </div>
-        </a>
-        <a href="furniture/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Tumpas</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-04.png" alt />
-          </div>
-        </a>
-        <a href="aqart/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Aqar Bot</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-02.png" alt />
-          </div>
-        </a>
-        <a href="/Scale/asset.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Scale</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-03.png" alt />
-          </div>
-        </a>
-        <a href="/Author_Identifcation/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Author Identifcation</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-12.png" alt />
+            <img :src="project.img" alt />
           </div>
         </a>
 
-        <span class="box curser" @click="showo">
+        <span class="box curser" @click="showoo">
           <div class="infoo">
             <h2></h2>
             <h2></h2>
@@ -365,235 +330,17 @@
         </span>
       </div>
     </div>
-    <div class="gallery"  v-if="shows === '1'">
-      <div class="container">
-        <a href="https://mashrouk-apis.vercel.app/main" class="box" target="_blank">
-          <div class="infoo">
-            <h2>mashrouk</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-23.png" alt />
-          </div>
-        </a>
-        <a href="/Tatweer/html/land.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Tatweer</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-24.png" alt />
-          </div>
-        </a>
-        <a href="/Kasper/temp2.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Kasper</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-22.png" alt />
-          </div>
-        </a>
-        <a href="/Leon/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Leon</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-16.png" alt />
-          </div>
-        </a>
-        <a href="/electricity-power/html/land.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Electricity Power</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-10.png" alt />
-          </div>
-        </a>
-        <a href="/Lava/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Lava</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-07.png" alt />
-          </div>
-        </a>
-        <a href="/My-Website/my_web_site.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>My-Website</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-21.png" alt />
-          </div>
-        </a>
-        <a href="/Light-Online/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Light Online</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-14.png" alt />
-          </div>
-        </a>
-        <a href="Corpo-link/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Corpo Link</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-05.png" alt />
-          </div>
-        </a>
-        <a href="/Mallory/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Mallory</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-06.png" alt />
-          </div>
-        </a>
-        <a href="/AI/main_Series_page/main.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Movies</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-08.png" alt />
-          </div>
-        </a>
-        <a href="/Construction-Company/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Construction Company</h2>
-            <h2>
-              9
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-09.png" alt />
-          </div>
-        </a>
-        <a href="/FlyFly/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Fly Fly</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-11.png" alt />
-          </div>
-        </a>
 
-        <a href="/land-matcher/index.html" class="box" target="_blank">
+    <div class="gallery" v-if="shows === '1'">
+      <div class="container">
+        <a v-for="(project, index) in extraProjects" :key="'extra-' + index" :href="project.link" class="box"
+          target="_blank">
           <div class="infoo">
-            <h2>Land Matcher</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
+            <h2>{{ project.title }}</h2>
+            <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
           </div>
           <div class="image">
-            <img src="../assets/img/imgs/gallery-13.png" alt />
-          </div>
-        </a>
-        <a href="/research-gate-page/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Research Gate</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-15.png" alt />
-          </div>
-        </a>
-        <a href="/E-Commerce/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>E-Commerce</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-17.png" alt />
-          </div>
-        </a>
-        <a href="/luch/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Luch</h2>
-            <h2>
-              5
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-18.png" alt />
-          </div>
-        </a>
-        <a href="/Logo-generator/authentication.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Logo generator</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-19.png" alt />
-          </div>
-        </a>
-        <a href="/Masafat/index.html" class="box" target="_blank">
-          <div class="infoo">
-            <h2>Masafat</h2>
-            <h2>
-              7
-              <img src="../assets/img/star.png" class="icon2" />
-            </h2>
-          </div>
-          <div class="image">
-            <img src="../assets/img/imgs/gallery-20.png" alt />
+            <img :src="project.img" alt />
           </div>
         </a>
       </div>
@@ -603,13 +350,15 @@
     <!-- 0 Pricing -->
     <section class="pricing" id="pricing">
       <div class="container">
-        <h1 class="upper" style="text-align: center;">Pricing plan</h1>
-        <h2>Pricing options that meets your</h2>
+        <h1 class="upper" style="text-align: center;">Pricing Plan</h1>
+        <h2>Pricing options that meet your</h2>
         <h2>budget and needs</h2>
+
         <div class="plans">
+          <!-- Hourly Plan -->
           <div class="plan">
             <div>
-              <p>Hours Plan</p>
+              <p>Hourly Plan</p>
               <h2>
                 100 EGP
                 <span class="price-per">per Hour</span>
@@ -618,10 +367,10 @@
             </div>
             <div class="flex-start">
               <div class="plan-det">
-                <p>report upon completion hours</p>
+                <p>Report provided upon completion of hours</p>
               </div>
               <div class="plan-det">
-                <p>Tasks start with a minimum of 1 hour.</p>
+                <p>Tasks start with a minimum of 1 hour</p>
               </div>
               <div class="plan-det">
                 <p>3 to 5 free revisions</p>
@@ -630,72 +379,73 @@
                 <p>Quick response to work-related inquiries</p>
               </div>
               <div class="plan-det">
-                <p>One hour free trial</p>
+                <p>One-hour free trial</p>
               </div>
               <div class="plan-det">
-                <p>50% Payment Before work</p>
+                <p>50% payment required before starting work</p>
               </div>
             </div>
-            <button class="about-btn plan-btn" @click="scrollToSkills"> Start Project</button>
+            <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
+
+          <!-- Project-Based Plan -->
           <div class="plan populer">
             <div>
-              <p>Project based</p>
+              <p>Project-Based Plan</p>
               <h2>
-                5k ~ 10k EG
+                5k ~ 10k EGP
                 <span class="price-per">per Project</span>
               </h2>
-              <p>For Companies or Customer who have spacific project requirment</p>
+              <p>For companies or customers with specific project requirements</p>
             </div>
             <div class="flex-start">
               <div class="plan-det">
                 <p>Pricing is based on the project's scope</p>
               </div>
               <div class="plan-det">
-                <p>30% free Edites</p>
+                <p>30% free revisions</p>
               </div>
               <div class="plan-det">
-                <p>Two weeks of support after project completion.</p>
+                <p>Two weeks of support after project completion</p>
               </div>
               <div class="plan-det">
-                <p>Project status reports every 3 to 4 days.</p>
+                <p>Project status reports every 3 to 4 days</p>
               </div>
               <div class="plan-det">
-                <p>Project progress displayed in stages (design, development, and publication).</p>
+                <p>Project phases: Design, Development, and Deployment</p>
               </div>
               <div class="plan-det">
-                <p>A 35% payment is required before work begins.</p>
+                <p>35% payment required before starting work</p>
               </div>
             </div>
             <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
+
+          <!-- Full-Time Plan -->
           <div class="plan">
             <div>
-              <p>Full Time Jop</p>
+              <p>Full-Time Plan</p>
               <h2>
-                13,000 EG
+                13,000 EGP
                 <span class="price-per">per Month</span>
               </h2>
               <p>For companies or clients who need a full-time developer on a monthly basis.</p>
             </div>
             <div class="flex-start">
               <div class="plan-det">
-                <p>160 hours (8 hours/day , 5 days/week)</p>
+                <p>160 hours (8 hours/day, 5 days/week)</p>
               </div>
-              <!-- <div class="plan-det">
-							<p>Task management(Design & Develop & Improvement)</p>
-              </div>-->
               <div class="plan-det">
                 <p>Weekly meetings to track progress</p>
               </div>
               <div class="plan-det">
-                <p>Unlaimted free Edits</p>
+                <p>Unlimited free edits</p>
               </div>
               <div class="plan-det">
-                <p>10% - 20% discount if working for more than a month</p>
+                <p>10% - 20% discount for long-term contracts</p>
               </div>
               <div class="plan-det">
-                <p>Work on multiple projects</p>
+                <p>Ability to work on multiple projects</p>
               </div>
               <div class="plan-det">
                 <p>50% payment required before starting work</p>
@@ -706,6 +456,7 @@
         </div>
       </div>
     </section>
+
     <!-- 1 Pricing -->
 
     <!-- 0 Lang -->
@@ -810,69 +561,50 @@
 
 
     <!-- 0 timeline -->
-    <h2 class="time-line-head">Education & Experience</h2>
+    <h2 class="timeline-head">Education & Experience</h2>
+
     <section class="timeline" id="experience">
-      <div class="timeline-content dis">
-        <h1>educations | Courses</h1>
-      </div>
-      <div class="timeline-item disapper">
-        <div class="timeline-icon">
-          <img src="../assets/img/degree-cap.png" class="icon2" />
-        </div>
-        <div class="timeline-content">
-          <h1>educations</h1>
-        </div>
-      </div>
-      <div class="timeline-item disapper">
-        <div class="timeline-icon">
-          <img src="../assets/img/bag.png" class="icon2" />
-        </div>
-        <div class="timeline-content">
-          <h1>work experince</h1>
-        </div>
-      </div>
 
       <div class="timeline-item">
-        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
           <h3>Bachelor in Computer Science</h3>
           <span>Helwan University</span>
-          <span class="timeline-date">Septemper 2019 - July 2023</span>
+          <span class="timeline-date">Sep 2019 - Jul 2023</span>
           <p>Studied core programming, data structures, and modern web development techniques.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
-          <h3>Data Collector</h3>
-          <span>StatsBomb Company</span>
-          <span class="timeline-date">March 2022 - September 2022</span>
-          <p>Gathered data from freeze-frame images using a desktop app .</p>
+          <h3>Web Development Professional Track</h3>
+          <span>Udacity</span>
+          <span class="timeline-date">Jan 2022 - Apr 2022</span>
+          <p>Studied modern web development techniques and frontend practices.</p>
         </div>
       </div>
 
       <div class="timeline-item">
-        <!-- <div class="timeline-icon"><i class="fas fa-briefcase"></i></div> -->
+        <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
           <h3>Minders Workshops</h3>
           <span>Minders</span>
-          <span class="timeline-date">Augast 2021 - October 2021 .</span>
-          <p>Completed workshops focusing on creating responsive websites</p>
+          <span class="timeline-date">Aug 2021 - Oct 2021</span>
+          <p>Completed workshops focused on responsive web design.</p>
         </div>
       </div>
 
-      <div class="timeline-item" style="visibility: hidden;"></div>
       <div class="timeline-item">
-        <!-- <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div> -->
+        <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
         <div class="timeline-content">
-          <h3>Web Devolpment professional Tracke</h3>
-          <span>Udacity</span>
-          <span class="timeline-date">January 2022 - April 2022 .</span>
-          <p>Studied core programming, data structures, and modern web development techniques.</p>
+          <h3>Data Collector</h3>
+          <span>StatsBomb Company</span>
+          <span class="timeline-date">Mar 2022 - Sep 2022</span>
+          <p>Gathered data from freeze-frame images using a desktop application.</p>
         </div>
       </div>
-      <!-- Add more timeline items as needed -->
+
     </section>
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
@@ -952,8 +684,8 @@
       </div>
     </section>
     <!-- 1 Quats -->
-    <!-- 0 footer -->
-    <footer class="foot">
+ <!-- 0 footer -->
+ <footer class="foot">
       <div class="container">
         <div class="up-footer">
           <div class="one-col">
@@ -1175,6 +907,154 @@ export default {
           avatar: require("@/assets/img/avatars/300-22.jpg"),
         },
       ],
+      mainProjects: [
+        {
+          title: 'Fashoin',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-01.png', import.meta.url).href,
+          link: '/fash/index.html'
+        },
+        {
+          title: 'Tumpas',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-04.png', import.meta.url).href,
+          link: 'furniture/index.html'
+        },
+        {
+          title: 'Aqar Bot',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-02.png', import.meta.url).href,
+          link: 'aqart/index.html'
+        },
+        {
+          title: 'Scale',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-03.png', import.meta.url).href,
+          link: '/Scale/asset.html'
+        },
+        {
+          title: 'Author Identification',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-12.png', import.meta.url).href,
+          link: '/Author_Identifcation/index.html'
+        }
+      ],
+      extraProjects: [
+        {
+          title: 'Mashrouk',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-23.png', import.meta.url).href,
+          link: 'https://mashrouk-apis.vercel.app/main'
+        },
+        {
+          title: 'Tatweer',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-24.png', import.meta.url).href,
+          link: '/Tatweer/html/land.html'
+        },
+        {
+          title: 'Kasper',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-22.png', import.meta.url).href,
+          link: '/Kasper/temp2.html'
+        },
+        {
+          title: 'Leon',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-16.png', import.meta.url).href,
+          link: '/Leon/index.html'
+        },
+        {
+          title: 'Land Matcher',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-13.png', import.meta.url).href,
+          link: '/Bondi/index.html'
+        },
+        {
+          title: 'IA Research',
+          stars: 6,
+          img: new URL('../assets/img/imgs/gallery-15.png', import.meta.url).href,
+          link: '/Bakery/index.html'
+        },
+        {
+          title: 'Color',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-14.png', import.meta.url).href,
+          link: '/Agency/index.html'
+        },
+        {
+          title: 'Tourist',
+          stars: 9,
+          img: new URL('../assets/img/imgs/gallery-11.png', import.meta.url).href,
+          link: '/ecommerce/index.html'
+        },
+        {
+          title: 'Electrcity',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-10.png', import.meta.url).href,
+          link: '/Nike/index.html'
+        },
+        {
+          title: 'Company',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-09.png', import.meta.url).href,
+          link: '/dashboard/index.html'
+        },
+        {
+          title: 'Lava',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-07.png', import.meta.url).href,
+          link: '/Pixer/index.html'
+        },
+        {
+          title: 'Corpo Link',
+          stars: 5,
+          img: new URL('../assets/img/imgs/gallery-05.png', import.meta.url).href,
+          link: '/SoundCloud/index.html'
+        },
+        {
+          title: 'Mallory',
+          stars: 8,
+          img: new URL('../assets/img/imgs/gallery-06.png', import.meta.url).href,
+          link: '/vite_portfolio/index.html'
+        },
+        {
+          title: 'Resturent',
+          stars: 6,
+          img: new URL('../assets/img/imgs/gallery-18.png', import.meta.url).href,
+          link: '/NewDash/index.html'
+        },
+        {
+          title: 'E-commerce',
+          stars: 6,
+          img: new URL('../assets/img/imgs/gallery-17.png', import.meta.url).href,
+          link: '/NFT/index.html'
+        },
+        {
+          title: 'Logo Generation',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-19.png', import.meta.url).href,
+          link: '/Digital_agency/index.html'
+        },
+        {
+          title: 'My Web site',
+          stars: 8,
+          img: new URL('../assets/img/imgs/gallery-21.png', import.meta.url).href,
+          link: '/gpa_calc/index.html'
+        },
+        {
+          title: 'AI Movies',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-08.png', import.meta.url).href,
+          link: '/tasks_vue/dist/index.html'
+        },
+        {
+          title: 'Masafat',
+          stars: 7,
+          img: new URL('../assets/img/imgs/gallery-20.png', import.meta.url).href,
+          link: '/todo_vue/dist/index.html'
+        }
+      ],
       currentTestimonialIndex: 0,
     };
 
@@ -1246,7 +1126,9 @@ export default {
         (this.currentTestimonialIndex - 1 + this.testimonials.length) %
         this.testimonials.length;
     },
-
+    showoo() {
+      this.shows = this.shows === '1' ? '0' : '1';
+    }
   }
 };
 </script>
