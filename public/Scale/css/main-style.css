@@ -5082,5 +5082,8 @@ text-transform: none;
   .image-box p {
     font-size: 16px;
   }
+  .pagination-filt {
+    display: none;
+  }
 }
 /* 1 assest */
