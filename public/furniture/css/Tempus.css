@@ -738,6 +738,10 @@ header a:hover {
   }
   .sec-foot-child {
     width: 100%;
+    flex-wrap: wrap;
+  }
+  .sec-foot-child p {
+    margin: 10px;
   }
   .p-b {
     margin-top: 30px;
