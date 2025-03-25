@@ -935,7 +935,7 @@ export default {
           title: 'Mashrouk',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-23.png', import.meta.url).href,
-          link: 'https://mashrouk-apis.vercel.app/main'
+          link: 'https://mashrouk-apis-eight.vercel.app/main'
         },
         {
           title: 'Tatweer',
