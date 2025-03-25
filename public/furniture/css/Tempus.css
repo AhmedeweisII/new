@@ -746,6 +746,16 @@ header a:hover {
   .p-b {
     margin-top: 30px;
   }
+  .c-w {
+    color: black;
+  }
+  .palans-nums {
+    flex-wrap: wrap;
+  }
+  .palans-num {
+    margin: 10px;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) {
   .d-h-b {
