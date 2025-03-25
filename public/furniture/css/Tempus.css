@@ -756,6 +756,9 @@ header a:hover {
     margin: 10px;
     width: 100%;
   }
+  .foot-btn {
+    margin: 10px 0;
+  }
 }
 @media (min-width: 768px) {
   .d-h-b {
