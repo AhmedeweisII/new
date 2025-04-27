@@ -8,6 +8,10 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons';
 
+
+
+
+
 // Add icons to the library
 library.add(faGraduationCap, faBriefcase);
 
@@ -19,3 +23,5 @@ app.component('font-awesome-icon', FontAwesomeIcon);
 
 // Use router and store
 app.use(store).use(router).mount('#app');
+
+// 

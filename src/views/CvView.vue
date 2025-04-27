@@ -58,7 +58,6 @@
       </div>
     </header>
     <!-- 1 header -->
-
     <!-- 0 top2-->
     <!-- <section class="land-top" id="home">
       <div
@@ -78,7 +77,6 @@
             <h2>top of The Last Projects</h2>
             <p>the most desired Projects</p>
           </div>
-       
           <a href="/fash/index.html" class="project" target="_blank">
             <img src="../assets/img/imgs/gallery-01.png" alt="none" class="p-cover" />
             <div class="info">
@@ -86,7 +84,6 @@
             </div>
             <p>good design for fashoin ideas</p>
           </a>
-      
           <a href="aqart/index.html" class="project" target="_blank">
             <img src="../assets/img/imgs/gallery-02.png" alt="none" class="p-cover" />
             <div class="info">
@@ -94,7 +91,6 @@
             </div>
             <p>Landing page describe Bot</p>
           </a>
-         
           <a href="/Scale/asset.html" class="project" target="_blank">
             <img src="../assets/img/pro1.png" alt="none" class="p-cover" />
             <div class="info">
@@ -102,7 +98,6 @@
             </div>
             <p>Exam for students</p>
           </a>
-        
           <a href="#Projects" class="more">
             <div class="sub-more">
               <p class="p-link">More Projects</p>
@@ -113,9 +108,7 @@
       </div>
     </section>-->
     <!-- 1 top2 -->
-
     <!--  <div class=""></div> -->
-
     <!-- 1 jops  -->
     <section class="make" aria-labelledby="intro-heading">
       <div class="container">
@@ -162,11 +155,8 @@
         </div>
       </div>
     </section>
-
-
-
     <!-- 0 jops -->
-    <section class="jops" id="Services" aria-labelledby="services-heading">
+    <section   class="jops" id="Services" aria-labelledby="services-heading">
       <div class="container">
         <div class="services-tilte">
           <span>What I Can Do</span>
@@ -179,7 +169,6 @@
             <a class="a-btn" href="#pricing" title="View Pricing Plans">See Pricing Plan</a>
           </button>
         </div>
-
         <div class="services">
           <article class="service">
             <img src="../assets/img/blog.png" class="icon2" alt="Web design service icon" />
@@ -189,7 +178,6 @@
               <a href="#" title="Read more about Web Design services">Read more</a>
             </div>
           </article>
-
           <article class="service">
             <img src="../assets/img/cloud-computing.png" class="icon2" alt="Development service icon" />
             <div class="serv-info">
@@ -198,7 +186,6 @@
               <a href="#" title="Read more about Development services">Read more</a>
             </div>
           </article>
-
           <article class="service">
             <img src="../assets/img/code.png" class="icon2" alt="UI Coding service icon" />
             <div class="serv-info">
@@ -207,7 +194,6 @@
               <a href="#" title="Read more about UI Coding services">Read more</a>
             </div>
           </article>
-
           <article class="service">
             <img src="../assets/img/multi-channel.png" class="icon2" alt="API connection service icon" />
             <div class="serv-info">
@@ -219,9 +205,7 @@
         </div>
       </div>
     </section>
-
     <!-- 1 jops  -->
-
     <!-- 0 about me  -->
     <section class="about-me" id="About" aria-labelledby="about-heading">
       <div class="container">
@@ -235,7 +219,6 @@
               I also provide high-quality designs at the lowest possible cost,<br />
               which gives me a great opportunity to create your website.
             </p>
-
             <div class="meddile-about">
               <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s"
                 alt="Trophy icon representing achievements" />
@@ -248,11 +231,9 @@
               </div>
               <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" alt="Brand logo icon" />
             </div>
-
             <button class="about-btn" @click="scrollToSkills" title="Learn more about me">About more</button>
           </div>
         </div>
-
         <div class="photo-box">
           <div class="photoo">
             <img src="../assets/img/your-photoo.jpg" alt="Photo of the developer" />
@@ -261,32 +242,26 @@
       </div>
     </section>
     <!-- 1  about me  -->
-
     <!-- 0 facts  -->
     <section class="facts" id="facts" aria-labelledby="facts-heading">
-
       <div class="container">
-
         <div class="fact">
           <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
           <h2 class="number">24</h2>
           <h3>Projects Completed</h3>
         </div>
-
         <div class="fact">
           <img src="../assets/img/reputation.png" class="icon2-m"
             alt="Reputation icon representing satisfied clients" />
           <h2 class="number">10</h2>
           <h3>Satisfied Clients</h3>
         </div>
-
         <div class="fact">
           <img src="../assets/img/responsive.png" class="icon2-m"
             alt="Responsive icon representing years of experience" />
           <h2 class="number">2</h2>
           <h3>Years of Experience</h3>
         </div>
-
         <div class="fact">
           <img src="../assets/img/trustworthiness.png" class="icon2-m"
             alt="Trust icon representing certificates earned" />
@@ -296,7 +271,6 @@
       </div>
     </section>
     <!-- 1 facts  -->
-
     <!-- 0 Gallery -->
     <div class="container" id="Projects">
       <div class="head-projects">
@@ -305,11 +279,10 @@
       </div>
     </div>
     <div class="gallery" id="gallery">
-
       <div class="container">
-
         <a v-for="(project, index) in mainProjects" :key="index" :href="project.link" class="box" target="_blank">
           <div class="infoo">
+            <!-- <div class="bozo">  {{index +1}}</div> -->
             <h2>{{ project.title }}</h2>
             <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
           </div>
@@ -317,7 +290,6 @@
             <img :src="project.img" alt />
           </div>
         </a>
-
         <span class="box curser" @click="showoo">
           <div class="infoo">
             <h2></h2>
@@ -330,12 +302,12 @@
         </span>
       </div>
     </div>
-
     <div class="gallery" v-if="shows === '1'">
       <div class="container">
         <a v-for="(project, index) in extraProjects" :key="'extra-' + index" :href="project.link" class="box"
           target="_blank">
           <div class="infoo">
+            <!-- <div class="bozo">  {{index +6}}</div> -->
             <h2>{{ project.title }}</h2>
             <h2>{{ project.stars }} <img src="../assets/img/star.png" class="icon2" /></h2>
           </div>
@@ -346,14 +318,12 @@
       </div>
     </div>
     <!-- 1 Gallery -->
-
     <!-- 0 Pricing -->
-    <section class="pricing" id="pricing">
+    <section class="pricing" id="pricing" v-if="0">
       <div class="container">
         <h1 class="upper" style="text-align: center;">Pricing Plan</h1>
         <h2>Pricing options that meet your</h2>
         <h2>budget and needs</h2>
-
         <div class="plans">
           <!-- Hourly Plan -->
           <div class="plan">
@@ -387,7 +357,6 @@
             </div>
             <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
-
           <!-- Project-Based Plan -->
           <div class="plan populer">
             <div>
@@ -420,7 +389,6 @@
             </div>
             <button class="about-btn plan-btn" @click="scrollToSkills">Start Project</button>
           </div>
-
           <!-- Full-Time Plan -->
           <div class="plan">
             <div>
@@ -456,9 +424,51 @@
         </div>
       </div>
     </section>
-
     <!-- 1 Pricing -->
-
+    <!-- 0 Pricing2 -->
+     <section  class="pricing-2" >
+      <div class="container">
+      <div class="pricing-section">
+        <h2 class="section-title">A Plan To Suit Your Needs</h2>
+        <div class="pricing-cards">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h3 class="plan-title">Hourly Plan</h3>
+                <p>small Task</p>
+                <ul class="plan-features">
+                  <li><i class="fas fa-check"></i> One hour free trial</li>
+                    <li><i class="fas fa-check"></i> Tasks start with a minimum of 1 hour</li>
+                    <li><i class="fas fa-check"></i> 50% payment required before starting work</li>
+                </ul>
+                <p class="plan-price">EGP 100 /hour</p>
+            </div>
+            <!-- Standard Plan -->
+            <div class="pricing-card standard">
+                <h3 class="plan-title">Project-Based Plan</h3>
+                <p>specific project</p>
+                <ul class="plan-features">
+                  <li><i class="fas fa-check"></i> Two weeks of support after project completion</li>
+                    <li><i class="fas fa-check"></i> Pricing is based on the project's scope </li>
+                    <li><i class="fas fa-check"></i>35% payment required</li>
+                </ul>
+                <p class="plan-price">EGP 5k ~ 10k /project</p>
+            </div>
+            <!-- Premium Plan -->
+            <div class="pricing-card premium">
+                <h3 class="plan-title">Full-Time Plan</h3>
+                <p>open developer</p>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check"></i> 160 hours (8 hours/day, 5 days/week)</li>
+                    <li><i class="fas fa-check"></i> Weekly meetings to track progress</li>
+                    <li><i class="fas fa-check"></i> Ability to work on multiple projects per month</li>
+                </ul>
+                <p class="plan-price">EGP 13,000 /mo</p>
+            </div>
+        </div>
+    </div>
+  </div>
+     </section>
+    <!-- 1 Pricing2 -->
     <!-- 0 Lang -->
     <section class="langauge" id="skills">
       <div class="cotact">
@@ -467,7 +477,6 @@
           <input type="hidden" name="_subject" value="New Message from Your Portfolio">
           <input type="hidden" name="_next" value="https://your-portfolio-url.com/thank-you.html">
           <input type="hidden" name="_captcha" value="false">
-
           <!-- Form Content -->
           <div class="icon">
             <img src="../assets/img/brand_logo.png" class="icon-special" />
@@ -556,15 +565,9 @@
       </div>
     </section>
     <!-- 1 Lang  -->
-
-
-
-
     <!-- 0 timeline -->
     <h2 class="timeline-head">Education & Experience</h2>
-
     <section class="timeline" id="experience">
-
       <div class="timeline-item">
         <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
@@ -574,7 +577,6 @@
           <p>Studied core programming, data structures, and modern web development techniques.</p>
         </div>
       </div>
-
       <div class="timeline-item">
         <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
@@ -584,7 +586,6 @@
           <p>Studied modern web development techniques and frontend practices.</p>
         </div>
       </div>
-
       <div class="timeline-item">
         <div class="timeline-icon"><img src="../assets/img/degree-cap.png" class="icon2" /></div>
         <div class="timeline-content">
@@ -594,7 +595,6 @@
           <p>Completed workshops focused on responsive web design.</p>
         </div>
       </div>
-
       <div class="timeline-item">
         <div class="timeline-icon"><img src="../assets/img/bag.png" class="icon2" /></div>
         <div class="timeline-content">
@@ -604,7 +604,6 @@
           <p>Gathered data from freeze-frame images using a desktop application.</p>
         </div>
       </div>
-
     </section>
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
@@ -645,7 +644,6 @@
               <img :src="testimonials[2].avatar" class="floating" />
             </a>
           </div>
-
           <!-- Testimonial Container -->
           <div class="testimonial-container">
             <div class="testimonial">
@@ -660,14 +658,12 @@
                 {{ currentTestimonial.position }} - {{ currentTestimonial.company }}
               </p>
             </div>
-
             <!-- Arrows -->
             <div class="arrows">
               <span class="arrow left spano" @click="previousTestimonial">&#8592;</span>
               <span class="arrow right spano" @click="nextTestimonial">&#8594;</span>
             </div>
           </div>
-
           <!-- Right Avatars -->
           <div class="avatars">
             <a href="#" class="right-top" @click.prevent="showTestimonial(3)">
@@ -795,9 +791,7 @@
             <div class="backgrond">
 							<a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
 						</div>
-
 					</div>
-
 					<div>
 						<div class="backgrond">
 							<a :href="mainProjects[1].link" target="_blank"><img :src="mainProjects[1].img" class="icon2-L" /></a>
@@ -816,12 +810,11 @@
       </div>
     </footer>
     <!-- 1 footer -->
-
-
+    <ScrollToTop />
   </section>
 </template>
-
 <script>
+import ScrollToTop from '@/components/ScrollToTop.vue';
 export default {
   data() {
     return {
@@ -1048,8 +1041,10 @@ export default {
       ],
       currentTestimonialIndex: 0,
     };
-
   },
+  components: {
+      ScrollToTop,
+    },
   computed: {
     innerWidth() {
       return this.images.length * this.slideWidth;
@@ -1123,7 +1118,6 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 @import "@/assets/style.css";
 @import "@/assets/normalize.css";

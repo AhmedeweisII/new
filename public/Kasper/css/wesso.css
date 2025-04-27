@@ -54,7 +54,7 @@ ul {
 }
 .main-heading h2 {
   font-weight: normal;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
   margin-bottom: 70px;
   text-transform: uppercase;
@@ -373,3 +373,129 @@ header nav .form i {
   top:3px;
 }
 /* end design */
+/* 0 Portfolio */
+.Portfolio {
+  padding-top:var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.list li {
+  padding:10px;
+  cursor: pointer;
+}
+.activeI {
+  background-color: var(--main-color);
+  color: white;
+}
+.shufll-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+@media(min-width:765px) {
+  .box {
+    flex-basis: 50%;
+  } 
+}
+@media(min-width:1200px) {
+  .box {
+    flex-basis: 25%;
+  } 
+}
+.box img {
+  max-width: 100%;
+  transition: 0.3s;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  background-color: white;
+  width: 100%;
+  transition: 0.3s;
+  padding: 15px 20px;
+}
+.caption p {
+  color: var(--main-color);
+  padding-top: 10px;
+}
+.box:hover .caption {
+  bottom: 0;
+}
+.box:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+.more {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  background-color: #19c8fa;
+  color: white;
+  text-decoration: none;
+  margin:  20px auto;
+  padding: 15px 20px;
+}
+/* 1 Portfolio  */
+/* 0 Video */
+/* Video Section */
+.video {
+  position: relative;
+ 
+}
+
+.video video {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+}
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 40%);
+}
+.vid-text {
+  background-color:   rgb(15 116 143 / 70%);
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+.vid-text h2 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.vid-text p {
+
+}
+
+.vid-text button {
+  margin-top: 20px;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+/* 1 Video */
