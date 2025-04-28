@@ -1453,10 +1453,10 @@ input[type="email"]:focus {
     align-items: center;
     color: #d0d0d0;
 }
-.plan-features li i {
+.plan-features li svg {
     color: #fff;
     margin-right: 10px;
-    font-size: 1.2rem;
+    font-size: 14px;
 }
 .plan-price {
     font-size: 1.2rem;

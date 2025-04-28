@@ -156,7 +156,7 @@
       </div>
     </section>
     <!-- 0 jops -->
-    <section   class="jops" id="Services" aria-labelledby="services-heading">
+    <section class="jops" id="Services" aria-labelledby="services-heading">
       <div class="container">
         <div class="services-tilte">
           <span>What I Can Do</span>
@@ -206,71 +206,6 @@
       </div>
     </section>
     <!-- 1 jops  -->
-    <!-- 0 about me  -->
-    <section class="about-me" id="About" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-me-info">
-          <div class="services-tilte">
-            <span>Who I Am</span>
-            <h2 id="about-heading">Crafting Stories Through Design</h2>
-            <p>
-              Since 2020, I have served as a Front-End Developer,<br />
-              where I have developed many systems.<br />
-              I also provide high-quality designs at the lowest possible cost,<br />
-              which gives me a great opportunity to create your website.
-            </p>
-            <div class="meddile-about">
-              <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s"
-                alt="Trophy icon representing achievements" />
-              <div>
-                <h3 class="mession-h">My Mission</h3>
-                <p>
-                  I aim to become the best front-end developer in Egypt and the Arab world,<br />
-                  creating full websites that delight users' eyes.
-                </p>
-              </div>
-              <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" alt="Brand logo icon" />
-            </div>
-            <button class="about-btn" @click="scrollToSkills" title="Learn more about me">About more</button>
-          </div>
-        </div>
-        <div class="photo-box">
-          <div class="photoo">
-            <img src="../assets/img/your-photoo.jpg" alt="Photo of the developer" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- 1  about me  -->
-    <!-- 0 facts  -->
-    <section class="facts" id="facts" aria-labelledby="facts-heading">
-      <div class="container">
-        <div class="fact">
-          <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
-          <h2 class="number">24</h2>
-          <h3>Projects Completed</h3>
-        </div>
-        <div class="fact">
-          <img src="../assets/img/reputation.png" class="icon2-m"
-            alt="Reputation icon representing satisfied clients" />
-          <h2 class="number">10</h2>
-          <h3>Satisfied Clients</h3>
-        </div>
-        <div class="fact">
-          <img src="../assets/img/responsive.png" class="icon2-m"
-            alt="Responsive icon representing years of experience" />
-          <h2 class="number">2</h2>
-          <h3>Years of Experience</h3>
-        </div>
-        <div class="fact">
-          <img src="../assets/img/trustworthiness.png" class="icon2-m"
-            alt="Trust icon representing certificates earned" />
-          <h2 class="number">11</h2>
-          <h3>Certificates Earned</h3>
-        </div>
-      </div>
-    </section>
-    <!-- 1 facts  -->
     <!-- 0 Gallery -->
     <div class="container" id="Projects">
       <div class="head-projects">
@@ -426,48 +361,93 @@
     </section>
     <!-- 1 Pricing -->
     <!-- 0 Pricing2 -->
-     <section  class="pricing-2" >
+    <section class="pricing-2">
       <div class="container">
-      <div class="pricing-section">
-        <h2 class="section-title">A Plan To Suit Your Needs</h2>
-        <div class="pricing-cards">
+        <div class="pricing-section">
+          <h2 class="section-title">A Plan To Suit Your Needs</h2>
+          <div class="pricing-cards">
             <!-- Basic Plan -->
             <div class="pricing-card">
-                <h3 class="plan-title">Hourly Plan</h3>
-                <p>small Task</p>
-                <ul class="plan-features">
-                  <li><i class="fas fa-check"></i> One hour free trial</li>
-                    <li><i class="fas fa-check"></i> Tasks start with a minimum of 1 hour</li>
-                    <li><i class="fas fa-check"></i> 50% payment required before starting work</li>
-                </ul>
-                <p class="plan-price">EGP 100 /hour</p>
+              <h3 class="plan-title">Hourly Plan</h3>
+              <p>small Task</p>
+              <ul class="plan-features">
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> One hour free trial</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Tasks start with a minimum of 1 hour</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> 50% payment required before starting work</li>
+              </ul>
+              <p class="plan-price">EGP 100 /hour</p>
             </div>
             <!-- Standard Plan -->
             <div class="pricing-card standard">
-                <h3 class="plan-title">Project-Based Plan</h3>
-                <p>specific project</p>
-                <ul class="plan-features">
-                  <li><i class="fas fa-check"></i> Two weeks of support after project completion</li>
-                    <li><i class="fas fa-check"></i> Pricing is based on the project's scope </li>
-                    <li><i class="fas fa-check"></i>35% payment required</li>
-                </ul>
-                <p class="plan-price">EGP 5k ~ 10k /project</p>
+              <h3 class="plan-title">Project-Based Plan</h3>
+              <p>specific project</p>
+              <ul class="plan-features">
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Two weeks of support after project completion</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Pricing is based on the project's scope </li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg>35% payment required</li>
+              </ul>
+              <p class="plan-price">EGP 5k ~ 10k /project</p>
             </div>
             <!-- Premium Plan -->
             <div class="pricing-card premium">
-                <h3 class="plan-title">Full-Time Plan</h3>
-                <p>open developer</p>
-                <ul class="plan-features">
-                    <li><i class="fas fa-check"></i> 160 hours (8 hours/day, 5 days/week)</li>
-                    <li><i class="fas fa-check"></i> Weekly meetings to track progress</li>
-                    <li><i class="fas fa-check"></i> Ability to work on multiple projects per month</li>
-                </ul>
-                <p class="plan-price">EGP 13,000 /mo</p>
+              <h3 class="plan-title">Full-Time Plan</h3>
+              <p>open developer</p>
+              <ul class="plan-features">
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> 160 hours (8 hours/day, 5 days/week)</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Weekly meetings to track progress</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24"
+                    height="24" data-icon="CheckmarkStandard" aria-hidden="true" class="default-ltr-cache-gcvz4a">
+                    <path fill="currentColor"
+                      d="M21.2928 4.29285L22.7071 5.70706L8.70706 19.7071C8.51952 19.8946 8.26517 20 7.99995 20C7.73474 20 7.48038 19.8946 7.29285 19.7071L0.292847 12.7071L1.70706 11.2928L7.99995 17.5857L21.2928 4.29285Z"
+                      clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg> Ability to work on multiple projects per month</li>
+              </ul>
+              <p class="plan-price">EGP 13,000 /mo</p>
             </div>
+          </div>
         </div>
-    </div>
-  </div>
-     </section>
+      </div>
+    </section>
     <!-- 1 Pricing2 -->
     <!-- 0 Lang -->
     <section class="langauge" id="skills">
@@ -565,6 +545,71 @@
       </div>
     </section>
     <!-- 1 Lang  -->
+         <!-- 0 about me  -->
+    <section class="about-me" id="About" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-me-info">
+          <div class="services-tilte">
+            <span>Who I Am</span>
+            <h2 id="about-heading">Crafting Stories Through Design</h2>
+            <p>
+              Since 2020, I have served as a Front-End Developer,<br />
+              where I have developed many systems.<br />
+              I also provide high-quality designs at the lowest possible cost,<br />
+              which gives me a great opportunity to create your website.
+            </p>
+            <div class="meddile-about">
+              <img src="../assets/img/trophy.png" class="icon2-L icon2-left hiden-s"
+                alt="Trophy icon representing achievements" />
+              <div>
+                <h3 class="mession-h">My Mission</h3>
+                <p>
+                  I aim to become the best front-end developer in Egypt and the Arab world,<br />
+                  creating full websites that delight users' eyes.
+                </p>
+              </div>
+              <img src="../assets/img/brand_logo.png" class="icon2-L icon2-right" alt="Brand logo icon" />
+            </div>
+            <button class="about-btn" @click="scrollToSkills" title="Learn more about me">About more</button>
+          </div>
+        </div>
+        <div class="photo-box">
+          <div class="photoo">
+            <img src="../assets/img/your-photoo.jpg" alt="Photo of the developer" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 1  about me  -->
+    <!-- 0 facts  -->
+    <section class="facts" id="facts" aria-labelledby="facts-heading">
+      <div class="container">
+        <div class="fact">
+          <img src="../assets/img/list.png" class="icon2-m" alt="List icon representing completed projects" />
+          <h2 class="number">24</h2>
+          <h3>Projects Completed</h3>
+        </div>
+        <div class="fact">
+          <img src="../assets/img/reputation.png" class="icon2-m"
+            alt="Reputation icon representing satisfied clients" />
+          <h2 class="number">10</h2>
+          <h3>Satisfied Clients</h3>
+        </div>
+        <div class="fact">
+          <img src="../assets/img/responsive.png" class="icon2-m"
+            alt="Responsive icon representing years of experience" />
+          <h2 class="number">2</h2>
+          <h3>Years of Experience</h3>
+        </div>
+        <div class="fact">
+          <img src="../assets/img/trustworthiness.png" class="icon2-m"
+            alt="Trust icon representing certificates earned" />
+          <h2 class="number">11</h2>
+          <h3>Certificates Earned</h3>
+        </div>
+      </div>
+    </section>
+    <!-- 1 facts  -->
     <!-- 0 timeline -->
     <h2 class="timeline-head">Education & Experience</h2>
     <section class="timeline" id="experience">
@@ -680,8 +725,8 @@
       </div>
     </section>
     <!-- 1 Quats -->
- <!-- 0 footer -->
- <footer class="foot">
+    <!-- 0 footer -->
+    <footer class="foot">
       <div class="container">
         <div class="up-footer">
           <div class="one-col">
@@ -784,23 +829,23 @@
             </div>
           </div>
           <div class="photoos">
-					<div>
-						<div class="backgrond">
-							<a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
-						</div>
-            <div class="backgrond">
-							<a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
-						</div>
-					</div>
-					<div>
-						<div class="backgrond">
-							<a :href="mainProjects[1].link" target="_blank"><img :src="mainProjects[1].img" class="icon2-L" /></a>
-						</div>
-						<div class="backgrond">
-							<a :href="mainProjects[3].link" target="_blank"><img :src="mainProjects[3].img" class="icon2-L" /></a>
-						</div>
-					</div>
-				</div>
+            <div>
+              <div class="backgrond">
+                <a :href="mainProjects[0].link" target="_blank"><img :src="mainProjects[0].img" class="icon2-L" /></a>
+              </div>
+              <div class="backgrond">
+                <a :href="extraProjects[0].link" target="_blank"><img :src="extraProjects[0].img" class="icon2-L" /></a>
+              </div>
+            </div>
+            <div>
+              <div class="backgrond">
+                <a :href="mainProjects[1].link" target="_blank"><img :src="mainProjects[1].img" class="icon2-L" /></a>
+              </div>
+              <div class="backgrond">
+                <a :href="mainProjects[3].link" target="_blank"><img :src="mainProjects[3].img" class="icon2-L" /></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="down-footer">
           <div class="fr-d">F.design</div>
@@ -1043,8 +1088,8 @@ export default {
     };
   },
   components: {
-      ScrollToTop,
-    },
+    ScrollToTop,
+  },
   computed: {
     innerWidth() {
       return this.images.length * this.slideWidth;
