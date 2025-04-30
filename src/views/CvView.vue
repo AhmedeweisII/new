@@ -254,7 +254,7 @@
     </div>
     <!-- 1 Gallery -->
     <!-- 0 Pricing -->
-    <section class="pricing" id="pricing" v-if="0">
+    <section class="pricing"  v-if="0">
       <div class="container">
         <h1 class="upper" style="text-align: center;">Pricing Plan</h1>
         <h2>Pricing options that meet your</h2>
@@ -361,7 +361,7 @@
     </section>
     <!-- 1 Pricing -->
     <!-- 0 Pricing2 -->
-    <section class="pricing-2">
+    <section class="pricing-2" id="pricing">
       <div class="container">
         <div class="pricing-section">
           <h2 class="section-title">A Plan To Suit Your Needs</h2>
@@ -973,7 +973,7 @@ export default {
           title: 'Mashrouk',
           stars: 5,
           img: new URL('../assets/img/imgs/gallery-23.png', import.meta.url).href,
-          link: 'https://mashrouk-apis-eight.vercel.app/main'
+          link: 'https://mashrouk-apis-eight.vercel.app/MoreLinks'
         },
         {
           title: 'Tatweer',
