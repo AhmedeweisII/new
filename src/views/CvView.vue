@@ -653,12 +653,12 @@
     <!-- 1 timeline -->
     <!-- 0 certifcate  -->
     <section class="certifcate">
-      <div class="container">
+      <div class="container" >
         <div class="services-tilte">
           <span class="tit">Certifications</span>
           <h2 style="color: black;">Certified Skills <br>for a Digital World.</h2>
         </div>
-        <div class="slider">
+        <div class="slider" ref="slider">
           <div class="slider-inner" :style="{ transform: `translateX(${offset}px)`, width: innerWidth + 'px' }">
             <img v-for="(image, index) in images" :key="index" :src="image" class="slide" @click="openModal(image)" />
           </div>
@@ -673,7 +673,7 @@
     <!-- 1 certifcate -->
     <!-- 0 Quats -->
     <section class="talking" id="testimonials">
-      <div class="container">
+      <div class="container over">
         <h2>What People Talk</h2>
         <span class="spano">About Me</span>
         <section class="testimonials">
@@ -874,68 +874,68 @@ export default {
       ],
       currentIndex: 0,
       offset: 0,
-      slideWidth: 370, // 350px for image + 10px margin-left + 10px margin-right
+      slideWidth: 200,
       isModalOpen: false,
       currentImage: "",
       isMoreVisible: false,
       testimonials: [
-        {
-          id: 1,
-          name: "John Doe",
-          details: "Working with this team was an absolute pleasure. Their attention to detail and creative approach helped us achieve our goals faster than expected. Highly recommended!",
-          position: "CEO",
-          company: "Pixel Lab",
-          avatar: require("@/assets/img/avatars/300-14.jpg"),
-        },
-        {
-          id: 2,
-          name: "Jane Smith",
-          details: "The level of professionalism and expertise is unmatched. They delivered a flawless product that exceeded our expectations. Truly a game-changer for our business.",
-          position: "CTO",
-          company: "Tech Solutions",
-          avatar: require("@/assets/img/avatars/300-27.jpg"),
-        },
-        {
-          id: 3,
-          name: "Ahmed Mohamed",
-          details: "I was impressed by their ability to understand our vision and turn it into reality. The team is highly skilled and always delivers on time. Great work!",
-          position: "Software Engineer",
-          company: "CodeCraft",
-          avatar: require("@/assets/img/avatars/300-4.jpg"),
-        },
-        {
-          id: 4,
-          name: "Wessam Ali",
-          details: "Their innovative solutions helped us streamline our processes and improve efficiency. The team is reliable, creative, and always goes the extra mile.",
-          position: "Product Manager",
-          company: "InnovateX",
-          avatar: require("@/assets/img/avatars/300-6.jpg"),
-        },
-        {
-          id: 5,
-          name: "Omar Hassan",
-          details: "The team's dedication and expertise are second to none. They transformed our ideas into a stunning product that our users love. Thank you for your hard work!",
-          position: "UI/UX Designer",
-          company: "DesignHub",
-          avatar: require("@/assets/img/avatars/300-9.jpg"),
-        },
-        {
-          id: 6,
-          name: "Hamza Showkat",
-          details: "From start to finish, the team was professional and responsive. They delivered a high-quality product that has significantly boosted our online presence.",
-          position: "Marketing Director",
-          company: "Digital Boost",
-          avatar: require("@/assets/img/avatars/300-20.jpg"),
-        },
-        {
-          id: 7,
-          name: "Harash Taka",
-          details: "Their technical expertise and creative solutions helped us overcome complex challenges. The team is a pleasure to work with, and the results speak for themselves.",
-          position: "Project Manager",
-          company: "Tech Innovators",
-          avatar: require("@/assets/img/avatars/300-22.jpg"),
-        },
-      ],
+  {
+    id: 1,
+    name: "Mahmoud Abdelrahman",
+    details: "Working with the team was excellent. Their commitment to deadlines and the quality of work exceeded expectations. I highly recommend them.",
+    position: "Business Development Manager",
+    company: "Future Tech",
+    avatar: require("@/assets/img/avatars/300-14.jpg"),
+  },
+  {
+    id: 2,
+    name: "Noha Khaled",
+    details: "A highly professional team that truly understands client needs. They helped us launch our website perfectly and in record time.",
+    position: "Head of Marketing",
+    company: "EG Digital",
+    avatar: require("@/assets/img/avatars/300-27.jpg"),
+  },
+  {
+    id: 3,
+    name: "Ahmed Samir",
+    details: "The team is smart and flexible. They worked with us step by step until the project was completed exactly as we envisioned.",
+    position: "Software Engineer",
+    company: "Smart Solutions",
+    avatar: require("@/assets/img/avatars/300-4.jpg"),
+  },
+  {
+    id: 4,
+    name: "Doaa Mostafa",
+    details: "Honestly, the service was excellent and technical support was very responsive. Truly respectful and understanding people.",
+    position: "Project Manager",
+    company: "Creative Line",
+    avatar: require("@/assets/img/avatars/300-6.jpg"),
+  },
+  {
+    id: 5,
+    name: "Karim El Husseiny",
+    details: "The final result was extremely professional, which helped us reach more customers and grow our business.",
+    position: "UI/UX Designer",
+    company: "Design Flow",
+    avatar: require("@/assets/img/avatars/300-9.jpg"),
+  },
+  {
+    id: 6,
+    name: "Yasmin Nabil",
+    details: "I collaborated with them on a digital marketing campaign, and the results were amazing. They understand the market well and know how to guide effectively.",
+    position: "Digital Marketing Specialist",
+    company: "Media Plus",
+    avatar: require("@/assets/img/avatars/300-20.jpg"),
+  },
+  {
+    id: 7,
+    name: "Amr Tawfik",
+    details: "Highly committed team with truly innovative solutions. I’ve worked with them on multiple projects, and they impress me every time.",
+    position: "Technical Director",
+    company: "EG Coders",
+    avatar: require("@/assets/img/avatars/300-22.jpg"),
+  },
+],
       mainProjects: [
         {
           title: 'Fashoin',
@@ -1104,8 +1104,17 @@ export default {
   mounted() {
     window.addEventListener("resize", this.updateOffset);
     setInterval(this.showSlides, 3000); // Change slide every 5 seconds
+    this.updateSlideWidth();
+window.addEventListener("resize", this.updateSlideWidth);
   },
   methods: {
+    updateSlideWidth() {
+  if (window.innerWidth <= 768) {
+    this.slideWidth = this.$refs.slider.offsetWidth;
+  } else {
+    this.slideWidth = 300;
+  }
+},
     toggleMenu() {
       const naviList = document.getElementById("navi-list");
       naviList.classList.toggle("active");
@@ -1164,6 +1173,24 @@ export default {
 };
 </script>
 <style scoped>
+.slider-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  margin: 0 10px;
+  cursor: pointer;
+  width: 295px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .slide {
+    /* width: 100% !important; */
+    margin: 0 !important;
+    padding: 10px;
+    padding-left: 0;
+  }
+}
 @import "@/assets/style.css";
 @import "@/assets/normalize.css";
 </style>
