@@ -574,6 +574,10 @@ button:hover{
 .right {
     position: relative;
     overflow: hidden;
+    flex-direction: column;
+    text-align: start;
+    padding: 20px;
+    align-items: baseline;
 }
 .photo-container {
     display: flex;
